@@ -12,6 +12,11 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
+  <run_depend>fanuc_m10ia_moveit_config</run_depend>
+  <run_depend>fanuc_m16ib20_moveit_config</run_depend>
+  <run_depend>fanuc_m430ia2f_moveit_config</run_depend>
+  <run_depend>fanuc_m430ia2p_moveit_config</run_depend>
+
   <export>
     <metapackage/>
   </export>
