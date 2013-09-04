@@ -10,6 +10,6 @@
   <arg name="use_controller_manager" default="false" />
   <param name="use_controller_manager" value="$(arg use_controller_manager)" />
 
-  <rosparam file="$(find fanuc_m430ia2p_moveit_config)/config/controllers.yaml"/>
+  <rosparam file="$(find fanuc_lrmate200ic5h_moveit_config)/config/controllers.yaml"/>
 
 </launch>

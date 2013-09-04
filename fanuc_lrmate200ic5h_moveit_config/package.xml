@@ -1,14 +1,14 @@
 <package>
-  <name>fanuc_m10ia_moveit_config</name>
+  <name>fanuc_lrmate200ic5h_moveit_config</name>
   <version>0.1.0</version>
   <description>
     <p>
-      MoveIt package for the Fanuc M-10iA.
+      MoveIt package for the Fanuc LR Mate 200iC/5H.
     </p>
     <p>
        An automatically generated package with all the configuration and launch 
-       files for using the Fanuc M-10iA with the MoveIt Motion Planning 
-       Framework.
+       files for using the Fanuc LR Mate 200iC/5H with the MoveIt Motion 
+       Planning Framework.
     </p>
   </description>
   <author email="assistant@moveit.ros.org">MoveIt Setup Assistant</author>
@@ -16,15 +16,15 @@
 
   <license>BSD</license>
 
-  <url type="website">http://ros.org/wiki/fanuc_m10ia_moveit_config</url>
+  <url type="website">http://ros.org/wiki/fanuc_lrmate200ic5h_moveit_config</url>
   <url type="bugtracker">https://github.com/ros-industrial/fanuc_experimental/issues</url>
   <url type="repository">https://github.com/ros-industrial/fanuc_experimental</url>
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <build_depend>fanuc_m10ia_support</build_depend>
+  <build_depend>fanuc_lrmate200ic_support</build_depend>
 
   <run_depend>moveit_ros_move_group</run_depend>
   <run_depend>xacro</run_depend>
-  <run_depend>fanuc_m10ia_support</run_depend>
+  <run_depend>fanuc_lrmate200ic_support</run_depend>
 </package>
