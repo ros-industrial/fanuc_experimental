@@ -27,4 +27,5 @@
   <run_depend>moveit_ros_move_group</run_depend>
   <run_depend>xacro</run_depend>
   <run_depend>fanuc_m16ib_support</run_depend>
+  <run_depend>moveit_simple_controller_manager</run_depend>
 </package>
