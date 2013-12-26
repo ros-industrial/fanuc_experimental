@@ -10,6 +10,11 @@
       for Fanuc M-20iA / ARC Mate 120iC manipulators. This currently includes 
       the base and 10L model.
     </p>
+    <p>Specifications:</p>
+    <ul>
+      <li>M-20iA - "Cable integrated J3 Arm"</li>
+      <li>M-20iA/10L - "Cable integrated J3 Arm"</li>
+    </ul>
     <p>
       Joint limits and max joint velocities are based on the information in 
       the <em>FANUC Robot ARC Mate 120iC, FANUC Robot M-20iA Mechanical Unit 
@@ -23,15 +28,10 @@
       in this package, be sure to check they are correct for the particular 
       robot model and configuration you intend to use them with.
     </p>
-    <p>Included models:</p>
-    <ul>
-      <li>M-20iA - "Cable integrated J3 Arm"</li>
-      <li>M-20iA/10L - "Cable integrated J3 Arm"</li>
-    </ul>
     <p>Contributors:</p>
-    <ul>
-      <li>Joe Spanier (M-20iA/10L)</li>
-    </ul>
+    <p>
+      This support package has received contributions from: Joe Spanier (M-20iA/10L).
+    </p>
   </description>
   <author email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
