@@ -29,4 +29,8 @@
   <run_depend>fanuc_m10ia_support</run_depend>
   <run_depend>fanuc_m10ia_moveit_plugins</run_depend>
   <run_depend>moveit_simple_controller_manager</run_depend>
+
+  <export>
+    <architecture_independent />
+  </export>
 </package>
