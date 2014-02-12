@@ -7,9 +7,9 @@ add_library(${IKFAST_LIBRARY_NAME} src/fanuc_lrmate200ic_manipulator_ikfast_move
 target_link_libraries(${IKFAST_LIBRARY_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${LAPACK_LIBRARIES})
 
 install(
-    TARGETS ${IKFAST_LIBRARY_NAME} 
-    LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION})
+  TARGETS ${IKFAST_LIBRARY_NAME} 
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION})
 
 install(
-    FILES fanuc_lrmate200ic_manipulator_moveit_ikfast_plugin_description.xml 
-    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/lrmate200ic_kinematics)
+  FILES fanuc_lrmate200ic_manipulator_moveit_ikfast_plugin_description.xml 
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/lrmate200ic_kinematics)
