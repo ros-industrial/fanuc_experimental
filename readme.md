@@ -13,6 +13,6 @@ APIs are to be considered unstable and are not guaranteed to be complete
 and / or functional.
 
 
-[ROS-Industrial]: http://www.ros.org/wiki/Industrial
-[ROS wiki]: http://www.ros.org/wiki/fanuc_experimental
+[ROS-Industrial]: http://wiki.ros.org/Industrial
+[ROS wiki]: http://wiki.ros.org/fanuc_experimental
 [fanuc]: https://github.com/ros-industrial/fanuc
