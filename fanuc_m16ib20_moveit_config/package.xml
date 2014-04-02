@@ -6,9 +6,9 @@
       MoveIt package for the Fanuc M-16iB/20.
     </p>
     <p>
-       An automatically generated package with all the configuration and launch 
-       files for using the Fanuc M-16iB/20 with the MoveIt Motion Planning 
-       Framework.
+      An automatically generated package with all the configuration and launch
+      files for using the Fanuc M-16iB/20 with the MoveIt Motion Planning
+      Framework.
     </p>
   </description>
   <author email="assistant@moveit.ros.org">MoveIt Setup Assistant</author>
