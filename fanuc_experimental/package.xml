@@ -16,6 +16,9 @@
   <run_depend>fanuc_lrmate200ic_moveit_plugins</run_depend>
   <run_depend>fanuc_lrmate200ic_support</run_depend>
   <run_depend>fanuc_lrmate200ic5h_moveit_config</run_depend>
+  <run_depend>fanuc_lrmate200id_moveit_config</run_depend>
+  <run_depend>fanuc_lrmate200id_moveit_plugins</run_depend>
+  <run_depend>fanuc_lrmate200id_support</run_depend>
   <run_depend>fanuc_m10ia_moveit_config</run_depend>
   <run_depend>fanuc_m10ia_moveit_plugins</run_depend>
   <run_depend>fanuc_m16ib20_moveit_config</run_depend>
