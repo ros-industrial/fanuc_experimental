@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 	<xacro:include filename="$(find fanuc_assets)/urdf/common_materials.xacro"/>
+	<xacro:include filename="$(find fanuc_assets)/urdf/common_constants.xacro"/>
 
 	<xacro:macro name="fanuc_lrmate200ic" params="prefix">
 		<link name="${prefix}base_link">
@@ -111,7 +112,7 @@
 		<link name="${prefix}tool0" />
 
 		<joint name="${prefix}joint_1" type="revolute">
-			<origin xyz="0 0 0.33" rpy="0 0 0" />
+			<origin xyz="0 0 0.330" rpy="0 0 0" />
 			<parent link="${prefix}base_link" />
 			<child link="${prefix}link_1" />
 			<axis xyz="0 0 1" />
@@ -125,37 +126,37 @@
 			<limit effort="0" lower="-1.0472" upper="2.4435" velocity="6.1087" />
 		</joint>
 		<joint name="${prefix}joint_3" type="revolute">
-			<origin xyz="0 0 0.3" rpy="0 0 0" />
+			<origin xyz="0 0 0.300" rpy="0 0 0" />
 			<parent link="${prefix}link_2" />
 			<child link="${prefix}link_3" />
 			<axis xyz="0 -1 0" />
 			<limit effort="0" lower="-2.4784" upper="4.0143" velocity="6.9813" />
 		</joint>
 		<joint name="${prefix}joint_4" type="revolute">
-			<origin xyz="0.32 0 0.075" rpy="0 0 0"/>
+			<origin xyz="0 0 0.075" rpy="0 0 0"/>
 			<parent link="${prefix}link_3"/>
 			<child link="${prefix}link_4"/>
 			<axis xyz="-1 0 0"/>
 			<limit effort="0" lower="-3.3161" upper="3.3161" velocity="7.8540" />
 		</joint>
 		<joint name="${prefix}joint_5" type="revolute">
-			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<origin xyz="0.320 0 0" rpy="0 0 0"/>
 			<parent link="${prefix}link_4"/>
 			<child link="${prefix}link_5"/>
 			<axis xyz="0 -1 0"/>
 			<limit effort="0" lower="-2.0944" upper="2.0944" velocity="7.8540" />
 		</joint>
 		<joint name="${prefix}joint_6" type="revolute">
-			<origin xyz="0.08 0 0" rpy="3.1416 -1.5708 0"/>
+			<origin xyz="0.080 0 0" rpy="0 0 0"/>
 			<parent link="${prefix}link_5"/>
 			<child link="${prefix}link_6"/>
-			<axis xyz="0 0 -1"/>
+			<axis xyz="-1 0 0"/>
 			<limit effort="0" lower="-6.2832" upper="6.2832" velocity="12.5664" />
 		</joint>
 		<joint name="${prefix}joint_6-tool0" type="fixed">
+			<origin xyz="0 0 0" rpy="${m_pi} ${-m_pi_2} 0" />
 			<parent link="${prefix}link_6" />
 			<child link="${prefix}tool0" />
-			<origin xyz="0 0 0" rpy="0 0 0" />
 		</joint>
 	</xacro:macro>
 </robot>
