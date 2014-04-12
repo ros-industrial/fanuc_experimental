@@ -80,11 +80,6 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          link_6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           tool0:
             Alpha: 1
             Show Axes: false
@@ -162,11 +157,6 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          link_6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           tool0:
             Alpha: 1
             Show Axes: false
@@ -190,9 +180,9 @@ Visualization Manager:
       Class: rviz/XYOrbit
       Distance: 2.9965
       Focal Point:
-        X: 0.113567
-        Y: 0.10592
-        Z: 2.23518e-07
+        X: -0.0550705
+        Y: 0.0314481
+        Z: 1.63271e-07
       Name: Current View
       Near Clip Distance: 0.01
       Pitch: 0.509797
