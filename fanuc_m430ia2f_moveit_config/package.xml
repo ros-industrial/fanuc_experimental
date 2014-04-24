@@ -1,6 +1,6 @@
 <package>
   <name>fanuc_m430ia2f_moveit_config</name>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
   <description>
     <p>
       MoveIt package for the Fanuc M-430iA/2F.
@@ -30,11 +30,17 @@
 
   <build_depend>fanuc_m430ia_support</build_depend>
 
+  <run_depend>moveit_simple_controller_manager</run_depend>
+  <run_depend>moveit_planners_ompl</run_depend>
+  <run_depend>moveit_ros_visualization</run_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
   <run_depend>moveit_ros_move_group</run_depend>
+
   <run_depend>xacro</run_depend>
+
   <run_depend>industrial_robot_simulator</run_depend>
   <run_depend>fanuc_m430ia_support</run_depend>
-  <run_depend>moveit_simple_controller_manager</run_depend>
 
   <export>
     <architecture_independent />
