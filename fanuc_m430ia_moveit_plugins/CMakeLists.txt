@@ -25,4 +25,5 @@ catkin_package(
     tf_conversions
 )
 
+add_subdirectory(m430ia2f_kinematics)
 add_subdirectory(m430ia2p_kinematics)

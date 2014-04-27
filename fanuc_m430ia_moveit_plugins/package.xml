@@ -8,7 +8,7 @@
     </p>
     <p>
       This package contains plugins for use with MoveIt and Fanuc M-430iA
-      manipulators. Plugins included support the 2P model. See the Fanuc
+      manipulators. Plugins included support the 2F and 2P model. See the Fanuc
       M-430iA support package for information on used joint angle and velocity
       limits.
     </p>
@@ -38,6 +38,7 @@
   <run_depend>tf_conversions</run_depend>
 
   <export>
+    <moveit_core plugin="${prefix}/m430ia2f_kinematics/fanuc_m430ia2f_manipulator_moveit_ikfast_plugin_description.xml"/>
     <moveit_core plugin="${prefix}/m430ia2p_kinematics/fanuc_m430ia2p_manipulator_moveit_ikfast_plugin_description.xml"/>
   </export>
 </package>
