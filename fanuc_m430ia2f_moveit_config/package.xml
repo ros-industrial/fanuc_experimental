@@ -41,6 +41,7 @@
 
   <run_depend>industrial_robot_simulator</run_depend>
   <run_depend>fanuc_m430ia_support</run_depend>
+  <run_depend>fanuc_m430ia_moveit_plugins</run_depend>
 
   <export>
     <architecture_independent />
