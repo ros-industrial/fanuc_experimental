@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='ASCII'?>
 <package>
   <name>fanuc_lrmate200ic_moveit_plugins</name>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
   <description>
     <p>
       MoveIt plugins for the Fanuc LR Mate 200iC (and variants).
     </p>
     <p>
       This package contains plugins for use with MoveIt and Fanuc LR Mate 200iC
-      manipulators. Plugins included support the base model and /5H. See the
+      manipulators. Plugins included support the base model, /5H and /5L. See the
       Fanuc LR Mate 200iC support package for information on used joint angle
       and velocity limits.
     </p>
@@ -40,5 +40,6 @@
   <export>
     <moveit_core plugin="${prefix}/lrmate200ic_kinematics/fanuc_lrmate200ic_manipulator_moveit_ikfast_plugin_description.xml"/>
     <moveit_core plugin="${prefix}/lrmate200ic5h_kinematics/fanuc_lrmate200ic5h_manipulator_moveit_ikfast_plugin_description.xml"/>
+    <moveit_core plugin="${prefix}/lrmate200ic5l_kinematics/fanuc_lrmate200ic5l_manipulator_moveit_ikfast_plugin_description.xml"/>
   </export>
 </package>
