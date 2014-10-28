@@ -8,9 +8,11 @@
     </p>
     <p>
       This package contains plugins for use with MoveIt and Fanuc LR Mate 200iC
-      manipulators. Plugins included support the base model, /5H and /5L. See the
-      Fanuc LR Mate 200iC support package for information on used joint angle
-      and velocity limits.
+      manipulators. Plugins included support the base model (/5C, /5WP), /5H,
+      /5L (/5LC), /5F and the /5HS (using the /5H plugin). Variants in brackets
+      are supported by the plugin of the referenced model. See the Fanuc LR
+      Mate 200iC support package for information on used joint angle and
+      velocity limits.
     </p>
     <p>
       Before using any of the plugins included in this package, be sure to
@@ -41,6 +43,7 @@
 
   <export>
     <moveit_core plugin="${prefix}/lrmate200ic_kinematics/fanuc_lrmate200ic_manipulator_moveit_ikfast_plugin_description.xml"/>
+    <moveit_core plugin="${prefix}/lrmate200ic5f_kinematics/fanuc_lrmate200ic5f_manipulator_moveit_ikfast_plugin_description.xml"/>
     <moveit_core plugin="${prefix}/lrmate200ic5h_kinematics/fanuc_lrmate200ic5h_manipulator_moveit_ikfast_plugin_description.xml"/>
     <moveit_core plugin="${prefix}/lrmate200ic5l_kinematics/fanuc_lrmate200ic5l_manipulator_moveit_ikfast_plugin_description.xml"/>
   </export>
