@@ -15,6 +15,7 @@
   <run_depend>fanuc_lrmate200id_moveit_config</run_depend>
   <run_depend>fanuc_lrmate200id_moveit_plugins</run_depend>
   <run_depend>fanuc_lrmate200id_support</run_depend>
+  <run_depend>fanuc_m900ia_support</run_depend>
 
   <export>
     <metapackage/>
