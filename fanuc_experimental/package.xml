@@ -1,4 +1,4 @@
-<package>
+<package format="2">
   <name>fanuc_experimental</name>
   <version>0.1.0</version>
   <description>Experimental packages for Fanuc manipulators within ROS-Industrial.</description>
@@ -12,11 +12,11 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>fanuc_lrmate200ib_support</run_depend>
-  <run_depend>fanuc_lrmate200id_moveit_config</run_depend>
-  <run_depend>fanuc_lrmate200id_moveit_plugins</run_depend>
-  <run_depend>fanuc_lrmate200id_support</run_depend>
-  <run_depend>fanuc_m900ia_support</run_depend>
+  <exec_depend>fanuc_lrmate200ib_support</exec_depend>
+  <exec_depend>fanuc_lrmate200id_moveit_config</exec_depend>
+  <exec_depend>fanuc_lrmate200id_moveit_plugins</exec_depend>
+  <exec_depend>fanuc_lrmate200id_support</exec_depend>
+  <exec_depend>fanuc_m900ia_support</exec_depend>
 
   <export>
     <metapackage/>
