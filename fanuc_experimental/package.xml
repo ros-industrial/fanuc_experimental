@@ -20,5 +20,14 @@
 
   <export>
     <metapackage/>
+    <rosindex>
+      <tags>
+        <tag>metapackage</tag>
+        <tag>fanuc</tag>
+        <tag>industrial</tag>
+        <tag>ros-industrial</tag>
+        <tag>experimental</tag>
+      </tags>
+    </rosindex>
   </export>
 </package>
