@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
   <include file="$(find fanuc_lrmate200ib_support)/launch/load_lrmate200ib.launch" />
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
