@@ -13,6 +13,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
+  <exec_depend>fanuc_lrmate200ib_moveit_config</exec_depend>
   <exec_depend>fanuc_lrmate200ib_support</exec_depend>
   <exec_depend>fanuc_lrmate200id_moveit_config</exec_depend>
   <exec_depend>fanuc_lrmate200id_moveit_plugins</exec_depend>
