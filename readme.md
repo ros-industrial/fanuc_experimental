@@ -1,6 +1,6 @@
 # Fanuc experimental
 
-[![Build Status](http://jenkins.ros.org/job/devel-indigo-fanuc_experimental/badge/icon)](http://jenkins.ros.org/job/devel-indigo-fanuc_experimental/)
+[![Build Status](http://build.ros.org/job/Idev__fanuc_experimental__ubuntu_trusty_amd64/badge/icon)](http://build.ros.org/job/Idev__fanuc_experimental__ubuntu_trusty_amd64)
 
 Experimental packages for Fanuc manipulators within [ROS-Industrial][].
 See the [ROS wiki][] page for more information.
