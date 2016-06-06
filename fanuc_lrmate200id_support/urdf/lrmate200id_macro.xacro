@@ -18,6 +18,11 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/base_link.stl"/>
         </geometry>
       </collision>
+      <inertial>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <mass value="9"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
     </link>
     <link name="${prefix}link_1">
       <visual>
@@ -33,6 +38,11 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_1.stl"/>
         </geometry>
       </collision>
+      <inertial>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <mass value="5"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
     </link>
     <link name="${prefix}link_2">
       <visual>
@@ -48,6 +58,11 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_2.stl"/>
         </geometry>
       </collision>
+      <inertial>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <mass value="4"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
     </link>
     <link name="${prefix}link_3">
       <visual>
@@ -63,6 +78,11 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_3.stl"/>
         </geometry>
       </collision>
+      <inertial>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <mass value="3"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
     </link>
     <link name="${prefix}link_4">
       <visual>
@@ -78,6 +98,11 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_4.stl"/>
         </geometry>
       </collision>
+      <inertial>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <mass value="2"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
     </link>
     <link name="${prefix}link_5">
       <visual>
@@ -93,6 +118,11 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_5.stl"/>
         </geometry>
       </collision>
+      <inertial>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <mass value="1"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
     </link>
     <link name="${prefix}link_6">
       <visual>
@@ -108,6 +138,11 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_6.stl"/>
         </geometry>
       </collision>
+      <inertial>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <mass value="1"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
     </link>
     <link name="${prefix}tool0" />
 
