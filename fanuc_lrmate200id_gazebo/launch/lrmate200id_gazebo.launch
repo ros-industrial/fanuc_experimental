@@ -1,5 +1,7 @@
 <launch>
 
+  <arg name="load_robot_model" default="true" />
+
   <!-- remap topics to conform to ROS-I specifications -->
   <remap from="/arm_controller/follow_joint_trajectory" to="/joint_trajectory_action" />
   <remap from="/arm_controller/state" to="/feedback_states" />
@@ -18,7 +20,10 @@
     <arg name="headless" value="$(arg headless)"/>
   </include>
 
-  <param name="robot_description" command="$(find xacro)/xacro.py $(find fanuc_lrmate200id_gazebo)/urdf/lrmate200id.xacro" />
+  <group if="$(arg load_robot_model)">
+    <param name="robot_description"
+           command="$(find xacro)/xacro.py $(find fanuc_lrmate200id_gazebo)/urdf/lrmate200id.xacro" />
+  </group>
 
   <node name="urdf_spawner"
         pkg="gazebo_ros" type="spawn_model"
