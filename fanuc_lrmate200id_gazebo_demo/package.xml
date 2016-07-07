@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>fanuc_lrmate200id_gazebo_demo</name>
+  <version>0.0.1</version>
+  <description>The fanuc_lrmate200id_gazebo_demo package</description>
+
+  <maintainer email="www.kentaro.wada@gmail.com">Kentaro Wada</maintainer>
+
+  <license>BSD</license>
+
+  <author email="www.kentaro.wada@gmail.com">Kentaro Wada</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>fanuc_lrmate200id_gazebo</exec_depend>
+  <exec_depend>fanuc_lrmate200id_moveit_config</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>roslaunch</exec_depend>
+  <exec_depend>roslint</exec_depend>
+  <exec_depend>rviz</exec_depend>
+
+  <export>
+  </export>
+</package>
