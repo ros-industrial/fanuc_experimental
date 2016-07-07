@@ -3,4 +3,13 @@
   <xacro:include filename="$(find fanuc_lrmate200id_support)/urdf/lrmate200id_macro.xacro"/>
   <xacro:include filename="$(find fanuc_lrmate200id_gazebo)/urdf/lrmate200id.gazebo"/>
   <xacro:fanuc_lrmate200id prefix=""/>
+
+  <!-- fix the base to the Gazebo world -->
+  <link name="world" />
+  <joint name="fixed" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
+
 </robot>

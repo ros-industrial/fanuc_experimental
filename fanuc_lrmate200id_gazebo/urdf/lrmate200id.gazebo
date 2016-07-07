@@ -10,15 +10,6 @@
     </plugin>
   </gazebo>
 
-  <!-- fix the base to the Gazebo world -->
-
-  <link name="world" />
-  <joint name="fixed" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <parent link="world"/>
-    <child link="base_link"/>
-  </joint>
-
   <!-- links -->
 
   <gazebo reference="base_link">
