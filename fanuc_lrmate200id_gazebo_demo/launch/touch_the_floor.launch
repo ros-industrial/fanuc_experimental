@@ -1,0 +1,32 @@
+<launch>
+
+  <arg name="reactive" default="true" />
+  <arg name="rviz" value="true" />
+
+  <include file="$(find fanuc_lrmate200id_gazebo)/launch/lrmate200id_gazebo.launch">
+    <arg name="load_robot_model" value="false" />
+  </include>
+
+  <param name="robot_description"
+         command="$(find xacro)/xacro.py $(find fanuc_lrmate200id_gazebo_demo)/urdf/lrmate200id_ft.xacro" />
+
+  <include file="$(find fanuc_lrmate200id_moveit_config)/launch/moveit_planning_execution_gazebo.launch">
+    <arg name="rviz" value="false" />
+  </include>
+
+  <node name="touch_the_floor_main"
+        pkg="fanuc_lrmate200id_gazebo_demo" type="touch_the_floor_main.py"
+        output="screen">
+    <rosparam subst_value="true">
+      reactive: $(arg reactive)
+    </rosparam>
+  </node>
+
+  <group if="$(arg rviz)">
+    <node name="rviz"
+          pkg="rviz" type="rviz"
+          args="-d $(find fanuc_lrmate200id_gazebo_demo)/rvizconfig/touch_the_floor.rviz">
+    </node>
+  </group>
+
+</launch>
