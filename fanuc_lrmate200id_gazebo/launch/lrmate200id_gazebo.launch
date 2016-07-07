@@ -27,4 +27,9 @@
 
   <include file="$(find fanuc_lrmate200id_gazebo)/launch/lrmate200id_control.launch" />
 
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher"
+        pkg="robot_state_publisher" type="robot_state_publisher"
+        respawn="false" output="screen" />
+
 </launch>
