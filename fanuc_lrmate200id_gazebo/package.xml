@@ -24,9 +24,10 @@
 
   <test_depend>roslaunch</test_depend>
 
-  <exec_depend>control_manager</exec_depend>
   <exec_depend>fanuc_lrmate200id_support</exec_depend>
   <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend>joint_state_controller</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
   <exec_depend>xacro</exec_depend>
 
