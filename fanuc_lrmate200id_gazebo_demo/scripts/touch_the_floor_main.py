@@ -72,6 +72,7 @@ class MainController(object):
 
     def go_down_to_floor(self, reactive=True):
         # # add plane under the robot
+        # from geometry_msgs.msg import PoseStamped
         # p = PoseStamped()
         # p.header.frame_id = self.robot.get_planning_frame()
         # p.pose.orientation.w = 1
