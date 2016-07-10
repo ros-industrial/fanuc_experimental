@@ -1,7 +1,15 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find fanuc_lrmate200id_gazebo)/urdf/lrmate200id.gazebo"/>
+  <xacro:include filename="$(find fanuc_lrmate200id_gazebo)/urdf/lrmate200id_macro.xacro"/>
+
+  <!-- fix the base to the Gazebo world -->
+  <link name="world" />
+  <joint name="fixed" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
 
   <gazebo reference="joint_6">
     <provideFeedback>true</provideFeedback>
