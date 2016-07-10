@@ -121,6 +121,7 @@ def main():
     loginfo('Reactive Planning: {}'.format(reactive))
     c.go_down_to_floor(reactive=reactive)
     moveit_commander.roscpp_shutdown()
+    moveit_commander.os._exit(0)
 
 
 if __name__ == '__main__':
