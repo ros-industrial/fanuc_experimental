@@ -3,6 +3,15 @@
   <xacro:include filename="$(find fanuc_resources)/urdf/common_materials.xacro"/>
   <xacro:include filename="$(find fanuc_resources)/urdf/common_constants.xacro"/>
 
+  <!-- Inertia parameters -->
+  <property name="base_link_mass" value="6.215" />  <!-- This mass might be incorrect -->
+  <property name="link_1_mass" value="2.13" />
+  <property name="link_2_mass" value="7.65" />
+  <property name="link_3_mass" value="2.91" />
+  <property name="link_4_mass" value="3.70" />
+  <property name="link_5_mass" value="1.70" />
+  <property name="link_6_mass" value="0.137" />  <!-- This mass might be incorrect -->
+
   <xacro:macro name="fanuc_lrmate200id" params="prefix">
     <link name="${prefix}base_link">
       <visual>
@@ -20,7 +29,7 @@
       </collision>
       <inertial>
         <origin rpy="0 0 0" xyz="0 0 0"/>
-        <mass value="9"/>
+        <mass value="${base_link_mass}"/>
         <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
       </inertial>
     </link>
@@ -40,7 +49,7 @@
       </collision>
       <inertial>
         <origin rpy="0 0 0" xyz="0 0 0"/>
-        <mass value="5"/>
+        <mass value="${link_1_mass}"/>
         <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
       </inertial>
     </link>
@@ -60,7 +69,7 @@
       </collision>
       <inertial>
         <origin rpy="0 0 0" xyz="0 0 0"/>
-        <mass value="4"/>
+        <mass value="${link_2_mass}"/>
         <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
       </inertial>
     </link>
@@ -80,7 +89,7 @@
       </collision>
       <inertial>
         <origin rpy="0 0 0" xyz="0 0 0"/>
-        <mass value="3"/>
+        <mass value="${link_3_mass}"/>
         <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
       </inertial>
     </link>
@@ -100,7 +109,7 @@
       </collision>
       <inertial>
         <origin rpy="0 0 0" xyz="0 0 0"/>
-        <mass value="2"/>
+        <mass value="${link_4_mass}"/>
         <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
       </inertial>
     </link>
@@ -120,7 +129,7 @@
       </collision>
       <inertial>
         <origin rpy="0 0 0" xyz="0 0 0"/>
-        <mass value="1"/>
+        <mass value="${link_5_mass}"/>
         <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
       </inertial>
     </link>
@@ -140,7 +149,7 @@
       </collision>
       <inertial>
         <origin rpy="0 0 0" xyz="0 0 0"/>
-        <mass value="1"/>
+        <mass value="${link_6_mass}"/>
         <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
       </inertial>
     </link>
