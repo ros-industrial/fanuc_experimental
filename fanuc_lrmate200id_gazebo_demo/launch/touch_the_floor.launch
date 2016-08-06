@@ -1,7 +1,7 @@
 <launch>
 
   <arg name="reactive" default="true" />
-  <arg name="rviz" value="true" />
+  <arg name="rviz" default="true" />
 
   <include file="$(find fanuc_lrmate200id_gazebo)/launch/lrmate200id_gazebo.launch">
     <arg name="load_robot_model" value="false" />
