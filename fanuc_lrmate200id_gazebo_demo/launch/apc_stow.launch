@@ -1,0 +1,29 @@
+<launch>
+
+  <param name="/move_group/trajectory_execution/execution_duration_monitoring" value="false" />
+
+  <arg name="reactive" default="true" />
+  <arg name="rviz" default="true" />
+  <arg name="gui" default="true" />
+
+  <include file="$(find fanuc_lrmate200id_gazebo)/launch/lrmate200id_gazebo.launch">
+    <arg name="load_robot_model" value="false" />
+    <arg name="world_name" value="$(find fanuc_lrmate200id_gazebo_demo)/worlds/apc_stow.world" />
+    <arg name="gui" value="$(arg gui)" />
+  </include>
+
+  <param name="robot_description"
+         command="$(find xacro)/xacro.py $(find fanuc_lrmate200id_gazebo_demo)/urdf/lrmate200id_apc_stow.xacro" />
+
+  <include file="$(find fanuc_lrmate200id_moveit_config)/launch/moveit_planning_execution_gazebo.launch">
+    <arg name="rviz" value="false" />
+  </include>
+
+  <group if="$(arg rviz)">
+    <node name="rviz"
+          pkg="rviz" type="rviz"
+          args="-d $(find fanuc_lrmate200id_gazebo_demo)/rvizconfig/apc_stow.rviz">
+    </node>
+  </group>
+
+</launch>

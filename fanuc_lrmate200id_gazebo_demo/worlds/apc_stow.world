@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://kiva_pod</uri>
+      <name>kiva_pod</name>
+      <pose>0.95 0 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://oreo_mega_stuf</uri>
+      <name>oreo_mega_stuf</name>
+      <pose>0 0.5 1.2 0 0 0</pose>
+    </include>
+
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+      <gravity>
+        0.0 0.0 -9.81
+      </gravity>
+    </physics>
+
+  </world>
+
+</sdf>
