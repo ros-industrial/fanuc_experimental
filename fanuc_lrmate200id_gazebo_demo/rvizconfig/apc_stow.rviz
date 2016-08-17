@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /TF1/Frames1
       Splitter Ratio: 0.532
-    Tree Height: 806
+    Tree Height: 438
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -67,6 +67,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
           base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -199,6 +204,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          gripper_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           kinect_tote_depth_frame:
             Alpha: 1
             Show Axes: false
@@ -282,7 +292,7 @@ Visualization Manager:
     - Alpha: 1
       Arrow Width: 0.3
       Class: rviz/WrenchStamped
-      Enabled: false
+      Enabled: true
       Force Arrow Scale: 0.05
       Force Color: 204; 51; 51
       History Length: 1
@@ -291,7 +301,7 @@ Visualization Manager:
       Torque Arrow Scale: 0.1
       Torque Color: 204; 204; 51
       Unreliable: false
-      Value: false
+      Value: true
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -390,29 +400,29 @@ Visualization Manager:
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.0975873
-        Y: 0.390616
-        Z: -7.45049e-08
+        X: 0.297266
+        Y: -0.047982
+        Z: 4.47044e-08
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.849797
+      Pitch: 0.524797
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 1.97493
+      Yaw: 1.40493
     Saved: ~
 Window Geometry:
   Displays:
-    collapsed: false
-  Height: 1416
+    collapsed: true
+  Height: 1387
   Help:
     collapsed: false
-  Hide Left Dock: false
+  Hide Left Dock: true
   Hide Right Dock: false
   Motion Planning:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002ab00000542fc0200000006fb000000100044006900730070006c006100790073010000002800000366000000d600fffffffb0000000800480065006c00700000000342000000bb0000007300fffffffb0000000a0056006900650077007300000003b0000000b0000000ac00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000394000001d6000001cb00fffffffb0000000a0049006d006100670065000000032b000000a500000000000000000000074f0000054200000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000002000000000000024d00000525fc0200000005fb000000100044006900730070006c006100790073000000002800000525000000d600fffffffb0000000800480065006c00700000000342000000bb0000007300fffffffb0000000a0056006900650077007300000003b0000000b0000000ac00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000000a0049006d006100670065000000032b000000a5000000000000000000000003000004fe000001d6fc0100000001fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000000000004fe0000029200ffffff000004fe0000034900000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 2560
-  X: 0
-  Y: 24
+  Width: 1278
+  X: 1240
+  Y: 14
