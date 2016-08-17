@@ -111,11 +111,37 @@
   <!-- kinect_tote <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 
   <!-- vacuum gripper >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+  <link name="gripper_link">
+    <gravity>0</gravity>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="transparent">
+        <color rgba="0 0 0 0"/>
+      </material>
+    </visual>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
+    </inertial>
+  </link>
+  <joint name="gripper_joint" type="revolute">
+    <parent link="link_6" />
+    <child link="gripper_link" />
+    <origin rpy="0 0 0" xyz="0.02 0 0" />
+    <limit effort="30" velocity="1.0" lower="0" upper="0" />
+  </joint>
   <gazebo>
     <plugin name="gazebo_ros_vacuum_gripper" filename="libgazebo_ros_vacuum_gripper.so">
       <robotNamespace>/vacuum_gripper</robotNamespace>
-      <bodyName>link_6</bodyName>
+      <bodyName>gripper_link</bodyName>
       <topicName>grasping</topicName>
+      <maxForce>5</maxForce>
+      <maxDistance>0.10</maxDistance>
+      <minDistance>0.10</minDistance>
     </plugin>
   </gazebo>
   <!-- vacuum gripper <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->

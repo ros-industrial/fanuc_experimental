@@ -16,8 +16,8 @@
     </include>
 
     <include>
-      <uri>model://oreo_mega_stuf</uri>
-      <name>oreo_mega_stuf</name>
+      <uri>model://safety_works_safety_glasses</uri>
+      <name>safety_works_safety_glasses</name>
       <pose>0 0.5 1.2 0 0 0</pose>
     </include>
 
