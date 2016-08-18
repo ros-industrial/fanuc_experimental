@@ -1,5 +1,7 @@
 <launch>
 
+  <env name="GAZEBO_MODEL_PATH" value="$(find fanuc_lrmate200id_gazebo_demo)/models:$(optenv GAZEBO_MODEL_PATH)" />
+
   <param name="/move_group/trajectory_execution/execution_duration_monitoring" value="false" />
 
   <arg name="reactive" default="true" />

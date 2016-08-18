@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="kiva_pod">
+
+  <xacro:property name="x_size" value=".865" />
+  <xacro:property name="y_size" value=".865" />
+  <xacro:property name="z_size" value="1." />
+  <xacro:property name="x_part_size" value="      .03 ${y_size} ${z_size}" />
+  <xacro:property name="y_part_size" value="${x_size}       .03 ${z_size}" />
+  <xacro:property name="z_part_size" value="${x_size} ${y_size}      .03" />
+
+
+  <!-- y middle -->
+  <link name="kiva_pod_base">  <!-- x_part0 -->
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry><box size="${x_part_size}"/></geometry>
+      <material name="darkgray"><color rgba=".2 .2 .2 1"/></material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry><box size="${x_part_size}"/></geometry>
+    </collision>
+  </link>
+
+
+  <!-- z bottom -->
+  <joint name="base_to_z_part0" type="fixed">
+    <parent link="kiva_pod_base"/>
+    <child link="kiva_pod_z_part0"/>
+  </joint>
+  <link name="kiva_pod_z_part0">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 ${-z_size/2}"/>
+      <geometry><box size="${z_part_size}"/></geometry>
+      <material name="darkgray"><color rgba=".2 .2 .2 1"/></material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 ${-z_size/2}"/>
+      <geometry><box size="${z_part_size}"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="base_to_z_part1" type="fixed">
+    <parent link="kiva_pod_base"/>
+    <child link="kiva_pod_z_part1"/>
+  </joint>
+  <link name="kiva_pod_z_part1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -.22"/>
+      <geometry><box size="${z_part_size}"/></geometry>
+      <material name="darkgray"><color rgba=".2 .2 .2 1"/></material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 -.22"/>
+      <geometry><box size="${z_part_size}"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="base_to_z_part2" type="fixed">
+    <parent link="kiva_pod_base"/>
+    <child link="kiva_pod_z_part2"/>
+  </joint>
+  <link name="kiva_pod_z_part2">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry><box size="${z_part_size}"/></geometry>
+      <material name="darkgray"><color rgba=".2 .2 .2 1"/></material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry><box size="${z_part_size}"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="base_to_z_part3" type="fixed">
+    <parent link="kiva_pod_base"/>
+    <child link="kiva_pod_z_part3"/>
+  </joint>
+  <link name="kiva_pod_z_part3">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 .22"/>
+      <geometry><box size="${z_part_size}"/></geometry>
+      <material name="darkgray"><color rgba=".2 .2 .2 1"/></material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 .22"/>
+      <geometry><box size="${z_part_size}"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="base_to_z_part4" type="fixed">
+    <parent link="kiva_pod_base"/>
+    <child link="kiva_pod_z_part4"/>
+  </joint>
+  <link name="kiva_pod_z_part4">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 ${z_size/2}"/>
+      <geometry><box size="${z_part_size}"/></geometry>
+      <material name="darkgray"><color rgba=".2 .2 .2 1"/></material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 ${z_size/2}"/>
+      <geometry><box size="${z_part_size}"/></geometry>
+    </collision>
+  </link>
+
+
+  <!-- y positive -->
+  <joint name="base_to_y_part0" type="fixed">
+    <parent link="kiva_pod_base"/>
+    <child link="kiva_pod_y_part0"/>
+  </joint>
+  <link name="kiva_pod_y_part0">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 ${y_size/2} 0"/>
+      <geometry><box size="${y_part_size}"/></geometry>
+      <material name="darkgray"><color rgba=".2 .2 .2 1"/></material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 ${y_size/2} 0"/>
+      <geometry><box size="${y_part_size}"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="base_to_y_part1" type="fixed">
+    <parent link="kiva_pod_base"/>
+    <child link="kiva_pod_y_part1"/>
+  </joint>
+  <link name="kiva_pod_y_part1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0.16 0"/>
+      <geometry><box size="${y_part_size}"/></geometry>
+      <material name="darkgray"><color rgba=".2 .2 .2 1"/></material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0.16 0"/>
+      <geometry><box size="${y_part_size}"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="base_to_y_part2" type="fixed">
+    <parent link="kiva_pod_base"/>
+    <child link="kiva_pod_y_part2"/>
+  </joint>
+  <link name="kiva_pod_y_part2">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 -.16 0"/>
+      <geometry><box size="${y_part_size}"/></geometry>
+      <material name="darkgray"><color rgba=".2 .2 .2 1"/></material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -.16 0"/>
+      <geometry><box size="${y_part_size}"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="base_to_y_part3" type="fixed">
+    <parent link="kiva_pod_base"/>
+    <child link="kiva_pod_y_part3"/>
+  </joint>
+  <link name="kiva_pod_y_part3">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 -${y_size/2} 0"/>
+      <geometry><box size="${y_part_size}"/></geometry>
+      <material name="darkgray"><color rgba=".2 .2 .2 1"/></material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -${y_size/2} 0"/>
+      <geometry><box size="${y_part_size}"/></geometry>
+    </collision>
+  </link>
+
+</robot>
