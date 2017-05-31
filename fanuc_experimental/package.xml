@@ -34,6 +34,7 @@
   <exec_depend>fanuc_r1000ia_support</exec_depend>
 
   <export>
+    <architecture_independent/>
     <metapackage/>
     <rosindex>
       <tags>
