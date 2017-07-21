@@ -18,8 +18,8 @@
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information in
-      the FANUC Robot CR-7iA Mechanical Unit Operator's Manual.
-      All urdfs are based on the default motion and
+      the <em>FANUC Robot CR-7iA Mechanical Unit Operator's Manual</em> version
+      <em>B-83774EN/01</em>. All urdfs are based on the default motion and
       joint velocity limits, unless noted otherwise (ie: no support for high
       speed joints, extended / limited motion ranges or other options).
     </p>
