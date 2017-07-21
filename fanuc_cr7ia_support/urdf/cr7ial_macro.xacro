@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:property name="pi" value="3.1415926535897931" />
   <xacro:include filename="$(find fanuc_resources)/urdf/common_materials.xacro"/>
 
   <xacro:macro name="fanuc_cr7ial" params="prefix">

@@ -29,8 +29,7 @@
       robot model and configuration you intend to use them with.
     </p>
   </description>
-  <author>Dave Niewinski</author>
-  <maintainer email="dniewinski@clearpathrobotics.com">dniewinski@clearpathrobotics.com</maintainer>
+  <author email="dniewinski@clearpathrobotics.com">Dave Niewinski</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
   <license>BSD</license>
 
