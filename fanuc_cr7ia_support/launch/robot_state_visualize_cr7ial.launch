@@ -2,7 +2,7 @@
 <!--
   Manipulator specific version of the state visualizer.
 
-  Defaults provided for LR Mate CR7iaL:
+  Defaults provided for LR Mate CR-7iA/L:
    - J23_factor = 1
    - use_bswap = true
    - 6 joints
