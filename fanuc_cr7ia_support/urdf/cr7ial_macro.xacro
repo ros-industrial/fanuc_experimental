@@ -116,42 +116,42 @@
       <parent link="${prefix}base_link" />
       <child link="${prefix}link_1" />
       <axis xyz="0 0 1" />
-      <limit effort="0" lower="-2.9671" upper="2.9671" velocity="4.7124" />
+      <limit effort="0" lower="-2.9671" upper="2.9671" velocity="6.4577" />
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
       <origin xyz="0.05 0 0" rpy="0 0 0" />
       <parent link="${prefix}link_1" />
       <child link="${prefix}link_2" />
       <axis xyz="0 1 0" />
-      <limit effort="0" lower="-1.15192" upper="1.74533" velocity="4.7124" />
+      <limit effort="0" lower="-1.15192" upper="1.74533" velocity="5.4105" />
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
       <origin xyz="0 0 0.440" rpy="0 0 0" />
       <parent link="${prefix}link_2" />
       <child link="${prefix}link_3" />
       <axis xyz="0 -1 0" />
-      <limit effort="0" lower="-0.802851" upper="3.10669" velocity="4.7124" />
+      <limit effort="0" lower="-0.802851" upper="3.10669" velocity="7.1558" />
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
       <origin xyz="0 0 0.035" rpy="0 0 0"/>
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
       <axis xyz="-1 0 0"/>
-      <limit effort="0" lower="-3.3161" upper="3.3161" velocity="7.8540" />
+      <limit effort="0" lower="-3.3161" upper="3.3161" velocity="9.5993" />
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
       <origin xyz="0.420 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
       <axis xyz="0 -1 0"/>
-      <limit effort="0" lower="-2.0944" upper="2.0944" velocity="7.8540" />
+      <limit effort="0" lower="-2.0944" upper="2.0944" velocity="9.5120" />
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
       <origin xyz="0.080 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
       <axis xyz="-1 0 0"/>
-      <limit effort="0" lower="-6.2832" upper="6.2832" velocity="12.5664" />
+      <limit effort="0" lower="-6.2832" upper="6.2832" velocity="17.4532" />
     </joint>
 
     <!-- ROS-Industrial 'base' frame: base_link to Fanuc World Coordinates transform -->
