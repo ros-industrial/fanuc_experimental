@@ -8,14 +8,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ial/visual/base_link.stl"/>
+          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ia/visual/base_link.stl"/>
         </geometry>
         <xacro:material_fanuc_gray24 />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ial/collision/base_link.stl"/>
+          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ia/collision/base_link.stl"/>
         </geometry>
       </collision>
     </link>
@@ -23,14 +23,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ial/visual/link_1.stl"/>
+          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ia/visual/link_1.stl"/>
         </geometry>
         <xacro:material_fanuc_green />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ial/collision/link_1.stl"/>
+          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ia/collision/link_1.stl"/>
         </geometry>
       </collision>
     </link>
@@ -53,14 +53,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ial/visual/link_3.stl"/>
+          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ia/visual/link_3.stl"/>
         </geometry>
         <xacro:material_fanuc_green />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ial/collision/link_3.stl"/>
+          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ia/collision/link_3.stl"/>
         </geometry>
       </collision>
     </link>
@@ -83,14 +83,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ial/visual/link_5.stl"/>
+          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ia/visual/link_5.stl"/>
         </geometry>
         <xacro:material_fanuc_green />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ial/collision/link_5.stl"/>
+          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ia/collision/link_5.stl"/>
         </geometry>
       </collision>
     </link>
@@ -98,14 +98,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ial/visual/link_6.stl"/>
+          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ia/visual/link_6.stl"/>
         </geometry>
         <xacro:material_fanuc_gray24 />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ial/collision/link_6.stl"/>
+          <mesh filename="package://fanuc_cr7ia_support/meshes/cr7ia/collision/link_6.stl"/>
         </geometry>
       </collision>
     </link>
