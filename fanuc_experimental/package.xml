@@ -29,9 +29,6 @@
   <exec_depend>fanuc_lrmate200id_moveit_plugins</exec_depend>
   <exec_depend>fanuc_lrmate200id_support</exec_depend>
   <exec_depend>fanuc_m20ib_support</exec_depend>
-  <exec_depend>fanuc_m6ib_moveit_config</exec_depend>
-  <exec_depend>fanuc_m6ib_moveit_plugins</exec_depend>
-  <exec_depend>fanuc_m6ib_support</exec_depend>
   <exec_depend>fanuc_m710ic_support</exec_depend>
   <exec_depend>fanuc_m900ia_support</exec_depend>
   <exec_depend>fanuc_m900ib_support</exec_depend>
