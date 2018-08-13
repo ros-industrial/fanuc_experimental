@@ -7,7 +7,7 @@
 [![support level: community](https://img.shields.io/badge/support%20level-community-lightgray.png)](http://rosindustrial.org/news/2016/10/7/better-supporting-a-growing-ros-industrial-software-platform)
 
 Experimental packages for Fanuc manipulators within [ROS-Industrial][].
-See the [ROS wiki][] page for more information.
+See the [fanuc][] repository and the [ROS wiki][] page for more information.
 
 
 ## Contents
