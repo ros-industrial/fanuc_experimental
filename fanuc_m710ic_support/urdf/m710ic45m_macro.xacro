@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
   <xacro:include filename="$(find fanuc_resources)/urdf/common_materials.xacro"/>
 
-  <!-- Only link 2 and 4 differ from a M-710iC50 so we re-use them -->
+  <!-- Only links 2 and 4 differ from a M-710iC50 so we re-use them -->
   <xacro:macro name="fanuc_m710ic45m" params="prefix">
     <!-- links: main serial chain -->
     <link name="${prefix}base_link">
@@ -69,14 +69,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/visual/link_4.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/visual/link_4.stl"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/collision/link_4.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/collision/link_4.stl"/>
         </geometry>
       </collision>
     </link>
