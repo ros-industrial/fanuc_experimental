@@ -2,20 +2,21 @@
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
   <xacro:include filename="$(find fanuc_resources)/urdf/common_materials.xacro"/>
 
+  <!-- Only link 2 and 4 differ from a M-710iC50 so we re-use them -->
   <xacro:macro name="fanuc_m710ic45m" params="prefix">
     <!-- links: main serial chain -->
     <link name="${prefix}base_link">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/visual/base_link.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/visual/base_link.stl"/>
         </geometry>
         <xacro:material_fanuc_black />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/collision/base_link.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/collision/base_link.stl"/>
         </geometry>
       </collision>
     </link>
@@ -23,14 +24,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/visual/link_1.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/visual/link_1.stl"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/collision/link_1.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/collision/link_1.stl"/>
         </geometry>
       </collision>
     </link>
@@ -53,14 +54,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/visual/link_3.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/visual/link_3.stl"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/collision/link_3.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/collision/link_3.stl"/>
         </geometry>
       </collision>
     </link>
@@ -68,14 +69,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/visual/link_4.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/visual/link_4.stl"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/collision/link_4.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/collision/link_4.stl"/>
         </geometry>
       </collision>
     </link>
@@ -83,14 +84,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/visual/link_5.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/visual/link_5.stl"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/collision/link_5.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/collision/link_5.stl"/>
         </geometry>
       </collision>
     </link>
@@ -98,14 +99,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/visual/link_6.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/visual/link_6.stl"/>
         </geometry>
         <xacro:material_fanuc_black />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic45m/collision/link_6.stl"/>
+          <mesh filename="package://fanuc_m710ic_support/meshes/m710ic50/collision/link_6.stl"/>
         </geometry>
       </collision>
     </link>
