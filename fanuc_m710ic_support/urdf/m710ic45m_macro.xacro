@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
   <xacro:include filename="$(find fanuc_resources)/urdf/common_materials.xacro"/>
 
-  <!-- Only links 2 and 4 differ from a M-710iC50 so we re-use them -->
+  <!-- note: we use almost all meshes from the M-710iC/50 as only links 2 and 4 are different. -->
   <xacro:macro name="fanuc_m710ic45m" params="prefix">
     <!-- links: main serial chain -->
     <link name="${prefix}base_link">
