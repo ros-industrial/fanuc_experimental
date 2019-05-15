@@ -34,6 +34,7 @@
   <depend>pluginlib</depend>
   <depend>roscpp</depend>
   <depend>tf_conversions</depend>
+  <depend>liburdfdom-headers-dev</depend>
 
   <export>
     <moveit_core plugin="${prefix}/lrmate200id_kinematics/fanuc_lrmate200id_manipulator_moveit_ikfast_plugin_description.xml"/>
