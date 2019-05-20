@@ -1,0 +1,70 @@
+#-------------------------------------------------------------------------------
+#
+# Joint limits file generated for M-20iB/25C (model: M-20iB, file: FLCC)
+#
+# on 2019-05-08T22:48:35.440000
+#
+# All limits in rad, rad/s, rad/s^2 and rad/s^3.
+#
+#-------------------------------------------------------------------------------
+joint_limits:
+  joint_1:
+    has_acceleration_limits: true
+    has_jerk_limits: true
+    has_position_limits: true
+    has_velocity_limits: true
+    max_acceleration: 12.423351
+    max_jerk: 86.273266
+    max_position: 2.967060
+    max_velocity: 3.577925
+    min_position: -2.967060
+  joint_2:
+    has_acceleration_limits: true
+    has_jerk_limits: true
+    has_position_limits: true
+    has_velocity_limits: true
+    max_acceleration: 12.423351
+    max_jerk: 86.273266
+    max_position: 2.443461
+    max_velocity: 3.577925
+    min_position: -1.745329
+  joint_3:
+    has_acceleration_limits: true
+    has_jerk_limits: true
+    has_position_limits: true
+    has_velocity_limits: true
+    max_acceleration: 15.756445
+    max_jerk: 109.419752
+    max_position: 5.215218
+    max_velocity: 4.537856
+    min_position: -2.600541
+  joint_4:
+    has_acceleration_limits: true
+    has_jerk_limits: true
+    has_position_limits: true
+    has_velocity_limits: true
+    max_acceleration: 25.149706
+    max_jerk: 174.650735
+    max_position: 3.490659
+    max_velocity: 7.243116
+    min_position: -3.490659
+  joint_5:
+    has_acceleration_limits: true
+    has_jerk_limits: true
+    has_position_limits: true
+    has_velocity_limits: true
+    max_acceleration: 25.149706
+    max_jerk: 174.650735
+    max_position: 2.530727
+    max_velocity: 7.243116
+    min_position: -2.530727
+  joint_6:
+    has_acceleration_limits: true
+    has_jerk_limits: true
+    has_position_limits: true
+    has_velocity_limits: true
+    max_acceleration: 53.329513
+    max_jerk: 370.343857
+    max_position: 4.712389
+    max_velocity: 15.358897
+    min_position: -4.712389
