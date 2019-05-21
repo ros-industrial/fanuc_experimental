@@ -21,11 +21,12 @@ find_package(LAPACK REQUIRED)
 
 catkin_package(
   LIBRARIES
-  DEPENDS
+  CATKIN_DEPENDS
     moveit_core
     pluginlib
     roscpp
     tf_conversions
+  DEPENDS
     urdfdom_headers
 )
 
