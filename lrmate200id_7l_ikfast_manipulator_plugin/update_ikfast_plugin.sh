@@ -1,0 +1,1 @@
+rosrun moveit_kinematics create_ikfast_moveit_plugin.py fanuc_lrmate200id_7l manipulator lrmate200id_7l_ikfast_manipulator_plugin /home/atas/catkin_ws/src/lrmate200id_7l_ikfast_manipulator_plugin/src/fanuc_lrmate200id_7l_manipulator_ikfast_solver.cpp
