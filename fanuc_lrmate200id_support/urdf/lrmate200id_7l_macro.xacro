@@ -2,20 +2,20 @@
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
   <xacro:include filename="$(find fanuc_resources)/urdf/common_materials.xacro"/>
 
-  <xacro:macro name="fanuc_lrmate200id" params="prefix">
+  <xacro:macro name="fanuc_lrmate200id_7l" params="prefix">
     <!-- links: main serial chain -->
     <link name="${prefix}base_link">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/base_link.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/visual/base_link.stl"/>
         </geometry>
         <xacro:material_fanuc_gray28 />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/base_link.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/collision/base_link.stl"/>
         </geometry>
       </collision>
     </link>
@@ -23,14 +23,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_1.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/visual/link_1.stl"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_1.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/collision/link_1.stl"/>
         </geometry>
       </collision>
     </link>
@@ -38,14 +38,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_2.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/visual/link_2.stl"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_2.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/collision/link_2.stl"/>
         </geometry>
       </collision>
     </link>
@@ -53,14 +53,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_3.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/visual/link_3.stl"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_3.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/collision/link_3.stl"/>
         </geometry>
       </collision>
     </link>
@@ -68,14 +68,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_4.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/visual/link_4.stl"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_4.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/collision/link_4.stl"/>
         </geometry>
       </collision>
     </link>
@@ -83,14 +83,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_5.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/visual/link_5.stl"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_5.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/collision/link_5.stl"/>
         </geometry>
       </collision>
     </link>
@@ -98,14 +98,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_6.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/visual/link_6.stl"/>
         </geometry>
         <xacro:material_fanuc_black />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_6.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id_7l/collision/link_6.stl"/>
         </geometry>
       </collision>
     </link>
@@ -126,7 +126,7 @@
       <limit effort="0" lower="-1.745329" upper="2.530727" velocity="6.63" />
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
-      <origin xyz="0 0 0.330" rpy="0 0 0"/>
+      <origin xyz="0 0 0.440" rpy="0 0 0"/>
       <parent link="${prefix}link_2" />
       <child link="${prefix}link_3" />
       <axis xyz="0 -1 0" />
@@ -140,7 +140,7 @@
       <limit effort="0" lower="-3.315" upper="3.315" velocity="9.60" />
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
-      <origin xyz="0.335 0 0" rpy="0 0 0"/>
+      <origin xyz="0.420 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
       <axis xyz="0 -1 0"/>
