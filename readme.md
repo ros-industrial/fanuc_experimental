@@ -21,6 +21,13 @@ APIs are to be considered unstable and are not guaranteed to be complete
 and / or functional.
 
 
+## Disclaimer
+
+The author of these packages is not affiliated with FANUC Corporation in any way.
+All trademarks and registered trademarks are property of their respective owners, and company, product and service names mentioned in this readme or appearing in source code or other artefacts in this repository are used for identification purposes only.
+Use of these names does not imply endorsement by FANUC Corporation.
+
+
 [ROS-Industrial]: http://wiki.ros.org/Industrial
 [ROS wiki]: http://wiki.ros.org/fanuc_experimental
 [fanuc]: https://github.com/ros-industrial/fanuc
