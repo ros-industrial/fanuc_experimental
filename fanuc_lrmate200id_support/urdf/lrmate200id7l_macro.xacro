@@ -38,14 +38,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/visual/link_2.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/visual/link_2.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/collision/link_2.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/collision/link_2.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
@@ -68,14 +68,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/visual/link_4.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/visual/link_4.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/collision/link_4.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/collision/link_4.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
