@@ -9,7 +9,7 @@
 
   <arg name="debug" default="false"/>
   <arg name="gui" default="true"/>
-  <arg name="paused" default="true" />
+  <arg name="paused" default="false" />
   <arg name="headless" default="false"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -30,14 +30,7 @@
         output="screen" respawn="false"
         args="-urdf
               -param robot_description
-              -model larmate200id
-              -pause
-              -J larmate200id::joint_1 0.0
-              -J larmate200id::joint_2 0.0
-              -J larmate200id::joint_3 0.0
-              -J larmate200id::joint_4 0.0
-              -J larmate200id::joint_5 0.0
-              -J larmate200id::joint_6 0.0"  
+              -model larmate200id"
                  />
 
 

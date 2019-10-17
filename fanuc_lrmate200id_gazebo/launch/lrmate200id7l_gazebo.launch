@@ -9,10 +9,11 @@
 
   <arg name="debug" default="false"/>
   <arg name="gui" default="true"/>
-  <arg name="paused" default="true" />
+  <arg name="paused" default="false" />
   <arg name="headless" default="false"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find fanuc_lrmate200id_gazebo)/worlds/workcell.world"/> 
     <arg name="debug" value="$(arg debug)" />
     <arg name="gui" value="$(arg gui)" />
     <arg name="paused" value="$(arg paused)"/>
@@ -30,14 +31,10 @@
         output="screen" respawn="false"
         args="-urdf
               -param robot_description
-              -model larmate200id
-              -pause
-              -J larmate200id7l::joint_1 1.0
-              -J larmate200id7l::joint_2 0.0
-              -J larmate200id7l::joint_3 0.0
-              -J larmate200id7l::joint_4 0.0
-              -J larmate200id7l::joint_5 0.0
-              -J larmate200id7l::joint_6 0.0"  
+              -model larmate200id7l
+              -x 1.0
+              -y -1.6
+              -z 0.9"  
                  />
 
 
