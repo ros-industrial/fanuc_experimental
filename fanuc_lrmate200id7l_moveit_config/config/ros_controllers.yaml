@@ -15,6 +15,10 @@ hardware_interface:
     - joint_4
     - joint_5
     - joint_6
+    - Part6_Gripper_Base
+    - Gripper_Finger1
+    - Gripper_Finger2
+    - Gripper_Finger3
   sim_control_mode: 1  # 0: position, 1: velocity
 # Publish all joint states
 # Creates the /joint_states topic necessary in ROS

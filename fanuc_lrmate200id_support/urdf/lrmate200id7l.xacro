@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
-<robot name="fanuc_lrmate200id7l" xmlns:xacro="http://wiki.ros.org/xacro">
+<robot name="fanuc_lrmate200id7l" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <xacro:include filename="$(find fanuc_lrmate200id_support)/urdf/lrmate200id7l_macro.xacro"/>
+  <xacro:include filename="$(find fanuc_lrmate200id_support)/urdf/gripper_macro.xacro" />
   <xacro:fanuc_lrmate200id7l prefix=""/>
+  <xacro:gripper prefix=""/>
+
+
+
+
 </robot>

@@ -1,8 +1,6 @@
 <?xml version = "1.0" ?>
 <robot name = "fanuc_lrmate200id7l" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 <xacro:macro name="fanuc_lrmate200id7l" params="prefix">
-
-
 <!--Gazebo ROS Control -->
 <gazebo>
   <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
@@ -95,13 +93,13 @@
 	<collision>
 		<origin xyz="0 0 0" rpy="0 0 0"/>
 		<geometry>
-			<mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/collision/link_2.stl" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/collision/link_2.stl" scale ="0.001 0.001 0.001"  />
 		</geometry>
 	</collision>
 	<visual>
 		<origin xyz="0 0 0" rpy="0 0 0"/>
 		<geometry>
-			<mesh filename = "package://fanuc_lrmate200id_support/meshes/lrmate200id7l/visual/link_2.stl" scale="0.001 0.001 0.001"/>
+			<mesh filename = "package://fanuc_lrmate200id_support/meshes/lrmate200id7l/visual/link_2.stl"  scale ="0.001 0.001 0.001"/>
 		</geometry>
 	</visual>
 	<inertial>
@@ -166,13 +164,13 @@
 	<collision>
 		<origin xyz ="0 0 0" rpy = "0 0 0" />
 		<geometry>
-			<mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/collision/link_4.stl" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/collision/link_4.stl"  scale ="0.001 0.001 0.001"/>
 		</geometry>
 	</collision>
 	<visual>
 		<origin xyz ="0 0 0" rpy = "0 0 0" />
 		<geometry>
-			<mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/visual/link_4.stl" scale="0.001 0.001 0.001"/>
+			<mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/visual/link_4.stl" scale ="0.001 0.001 0.001"/>
 		</geometry>
 	</visual>
 	<inertial>

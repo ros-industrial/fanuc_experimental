@@ -24,6 +24,31 @@
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="FixedBase" type="fixed" parent_frame="world" child_link="base_link" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="Finger1" link2="Finger2" reason="Never" />
+    <disable_collisions link1="Finger1" link2="Finger3" reason="Never" />
+    <disable_collisions link1="Finger1" link2="Gripper_Base" reason="Adjacent" />
+    <disable_collisions link1="Finger1" link2="link_3" reason="Never" />
+    <disable_collisions link1="Finger1" link2="link_4" reason="Never" />
+    <disable_collisions link1="Finger1" link2="link_5" reason="Never" />
+    <disable_collisions link1="Finger1" link2="link_6" reason="Never" />
+    <disable_collisions link1="Finger1" link2="tool0" reason="Never" />
+    <disable_collisions link1="Finger2" link2="Finger3" reason="Never" />
+    <disable_collisions link1="Finger2" link2="Gripper_Base" reason="Adjacent" />
+    <disable_collisions link1="Finger2" link2="link_3" reason="Never" />
+    <disable_collisions link1="Finger2" link2="link_4" reason="Never" />
+    <disable_collisions link1="Finger2" link2="link_5" reason="Never" />
+    <disable_collisions link1="Finger2" link2="link_6" reason="Never" />
+    <disable_collisions link1="Finger2" link2="tool0" reason="Never" />
+    <disable_collisions link1="Finger3" link2="Gripper_Base" reason="Adjacent" />
+    <disable_collisions link1="Finger3" link2="link_3" reason="Never" />
+    <disable_collisions link1="Finger3" link2="link_4" reason="Never" />
+    <disable_collisions link1="Finger3" link2="link_5" reason="Never" />
+    <disable_collisions link1="Finger3" link2="link_6" reason="Never" />
+    <disable_collisions link1="Finger3" link2="tool0" reason="Never" />
+    <disable_collisions link1="Gripper_Base" link2="link_3" reason="Never" />
+    <disable_collisions link1="Gripper_Base" link2="link_5" reason="Never" />
+    <disable_collisions link1="Gripper_Base" link2="link_6" reason="Default" />
+    <disable_collisions link1="Gripper_Base" link2="tool0" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="link_1" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="link_2" reason="Never" />
     <disable_collisions link1="base_link" link2="link_3" reason="Never" />
@@ -33,7 +58,11 @@
     <disable_collisions link1="link_3" link2="link_4" reason="Adjacent" />
     <disable_collisions link1="link_3" link2="link_5" reason="Never" />
     <disable_collisions link1="link_3" link2="link_6" reason="Never" />
+    <disable_collisions link1="link_3" link2="tool0" reason="Never" />
     <disable_collisions link1="link_4" link2="link_5" reason="Adjacent" />
     <disable_collisions link1="link_4" link2="link_6" reason="Never" />
+    <disable_collisions link1="link_4" link2="tool0" reason="Never" />
     <disable_collisions link1="link_5" link2="link_6" reason="Adjacent" />
+    <disable_collisions link1="link_5" link2="tool0" reason="Default" />
+    <disable_collisions link1="link_6" link2="tool0" reason="Adjacent" />
 </robot>
