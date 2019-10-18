@@ -12,7 +12,7 @@
         <origin rpy="0 -1.57 0" xyz="0 0 0" />
         <axis xyz="0 0 1" />
         <dynamics damping="0.7" />
-        <limit effort="100" lower="-0.5232" upper="0.5232" velocity="100" />
+        <limit effort="100" lower="0" upper="0" velocity="100" />
     </joint>
     <!-- Gripper Base -->
     <link name="Gripper_Base">
@@ -49,7 +49,7 @@
         <origin rpy="0 0 0" xyz="0.04448 0 -0.09533" />
         <axis xyz="0 1 0" />
         <dynamics damping="0.7" />
-        <limit effort="1" lower="-0.0872" upper="0.0872" velocity="6.1087" />
+        <limit effort="1" lower="-0.4" upper="0.4" velocity="6.1087" />
     </joint>
     <!-- Finger 3-->
     <link name="Finger3">
@@ -84,7 +84,7 @@
         <origin rpy="0 0 0" xyz="-0.04448 0.04 -0.09533" />
         <axis xyz="0 1 0" />
         <dynamics damping="0.7" />
-        <limit effort="1" lower="-0.0872" upper="0.0872" velocity="6.1087" />
+        <limit effort="1" lower="-0.4" upper="0.4" velocity="6.1087" />
     </joint>
     <!-- Finger 1-->
     <link name="Finger1">
@@ -118,7 +118,7 @@
         <origin rpy="0 0 0" xyz="-0.04448 -0.04 -0.09533" />
         <axis xyz="0 1 0" />
         <dynamics damping="0.7" />
-        <limit effort="1" lower="-0.0872" upper="0.0872" velocity="6.1087" />
+        <limit effort="1" lower="-0.4" upper="0.4" velocity="6.1087" />
     </joint>
     <!-- Finger 2-->
     <link name="Finger2">
@@ -151,40 +151,40 @@
     <transmission name="trans_Part6_Gripper_Base">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="Part6_Gripper_Base">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         </joint>
         <actuator name="Part6_Gripper_Base_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
     <transmission name="trans_Gripper_Finger3">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="Gripper_Finger3">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         </joint>
         <actuator name="Gripper_Finger3_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
     <transmission name="trans_Gripper_Finger1">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="Gripper_Finger1">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         </joint>
         <actuator name="Gripper_Finger1_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
     <transmission name="trans_Gripper_Finger2">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="Gripper_Finger2">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         </joint>
         <actuator name="Gripper_Finger2_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
