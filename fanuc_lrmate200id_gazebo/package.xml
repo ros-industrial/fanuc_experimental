@@ -31,6 +31,14 @@
   <exec_depend>joint_state_controller</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
   <exec_depend>xacro</exec_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>fanuc_arm_for_chicony</build_depend>
+  <exec_depend>fanuc_arm_for_chicony</exec_depend>
+
+
+  <build_export_depend>roscpp</build_export_depend>
+  <depend>gazebo_plugins</depend>
 
   <export>
     <architecture_independent />

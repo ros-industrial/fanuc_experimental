@@ -1509,10 +1509,10 @@
       <pose frame=''>-0.824856 0.000555 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>219 105000000</sim_time>
-      <real_time>76 435086776</real_time>
-      <wall_time>1571219991 472019592</wall_time>
-      <iterations>75997</iterations>
+      <sim_time>405 129000000</sim_time>
+      <real_time>193 325140184</real_time>
+      <wall_time>1571390979 826840178</wall_time>
+      <iterations>186024</iterations>
       <model name='ground_plane'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -1523,11 +1523,31 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='pulley_part_ariac'>
+        <pose frame=''>1.28513 -1.64488 0.954817 -4.3e-05 3.3e-05 0</pose>
+        <scale>1 1 1</scale>
+        <link name='pulley_part_ariac::link'>
+          <pose frame=''>1.28513 -1.64488 0.954817 -4.3e-05 3.3e-05 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='pulley_part_ariac_clone'>
+        <pose frame=''>1.28489 -1.92504 0.955185 -0.000139 0.00019 -0</pose>
+        <scale>1 1 1</scale>
+        <link name='pulley_part_ariac_clone::pulley_part_ariac::link'>
+          <pose frame=''>1.28489 -1.92504 0.955185 -0.000139 0.00019 -0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='workcell'>
-        <pose frame=''>0.003156 -7.6e-05 0 0 -0 1.57</pose>
+        <pose frame=''>0.083397 -0.203498 0 0 -0 1.57</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>0.003156 -7.6e-05 0 0 -0 1.57</pose>
+          <pose frame=''>0.083397 -0.203498 0 0 -0 1.57</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -1559,7 +1579,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>0.607049 -1.79834 4.43686 0 1.49964 -0.023798</pose>
+        <pose frame=''>-1.84096 -1.7962 2.3949 0 0.51564 -0.111798</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -1802,5 +1822,365 @@
       </link>
       <pose frame=''>0.389128 -1.10309 0 0 -0 0</pose>
     </model>
-  </world>
+    <model name='pulley_part_ariac1'>
+      <plugin name="model_push" filename="libmodel_push.so"/>
+      <link name='pulley_part_ariac::link'>
+        <inertial>
+          <pose frame=''>0 0 0.035145 0 -0 0</pose>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.00191582</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00191582</iyy>
+            <iyz>0</iyz>
+            <izz>0.00341991</izz>
+          </inertia>
+        </inertial>
+
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://pulley_part_ariac/meshes/object.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://pulley_part_ariac/materials/scripts</uri>
+              <uri>model://pulley_part_ariac/materials/textures</uri>
+              <name>ArmPart/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>1.28453 -11.2 0.96 0 -0 0</pose>
+    </model>
+    <model name='pulley_part_aria2'>
+      <plugin name="model_push" filename="libmodel_push.so"/>
+      <link name='pulley_part_ariac_clone::pulley_part_ariac::link'>
+        <inertial>
+          <pose frame=''>0 0 0.035145 0 -0 0</pose>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.00191582</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00191582</iyy>
+            <iyz>0</iyz>
+            <izz>0.00341991</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision_core'>
+          <pose frame=''>0 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.05</length>
+              <radius>0.112</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1000000.0</kp>
+                <kd>1.0</kd>
+                <mu1>0.8</mu1>
+                <mu2>0.8</mu2>
+                <maxVel>0.0</maxVel>
+                <minDepth>0.001</minDepth>
+              </ode>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://pulley_part_ariac/meshes/object.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://pulley_part_ariac/materials/scripts</uri>
+              <uri>model://pulley_part_ariac/materials/textures</uri>
+              <name>ArmPart/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>1.28453 -9.0 0.96 0 0 0</pose>
+    </model>
+
+
+        <model name='pulley_part_aria3'>
+      <plugin name="model_push" filename="libmodel_push.so"/>
+      <link name='pulley_part_ariac::link'>
+        <inertial>
+          <pose frame=''>0 0 0.035145 0 -0 0</pose>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.00191582</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00191582</iyy>
+            <iyz>0</iyz>
+            <izz>0.00341991</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision_core'>
+          <pose frame=''>0 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.05</length>
+              <radius>0.112</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1000000.0</kp>
+                <kd>1.0</kd>
+                <mu1>0.8</mu1>
+                <mu2>0.8</mu2>
+                <maxVel>0.0</maxVel>
+                <minDepth>0.001</minDepth>
+              </ode>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://pulley_part_ariac/meshes/object.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://pulley_part_ariac/materials/scripts</uri>
+              <uri>model://pulley_part_ariac/materials/textures</uri>
+              <name>ArmPart/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>1.28453 -5.4 0.96 0 -0 0</pose>
+    </model>
+    <model name='pulley_part_ariac4'>
+      <plugin name="model_push" filename="libmodel_push.so"/>
+      <link name='pulley_part_ariac_clone::pulley_part_ariac::link'>
+        <inertial>
+          <pose frame=''>0 0 0.035145 0 -0 0</pose>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.00191582</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00191582</iyy>
+            <iyz>0</iyz>
+            <izz>0.00341991</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision_core'>
+          <pose frame=''>0 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.05</length>
+              <radius>0.112</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1000000.0</kp>
+                <kd>1.0</kd>
+                <mu1>0.8</mu1>
+                <mu2>0.8</mu2>
+                <maxVel>0.0</maxVel>
+                <minDepth>0.001</minDepth>
+              </ode>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://pulley_part_ariac/meshes/object.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://pulley_part_ariac/materials/scripts</uri>
+              <uri>model://pulley_part_ariac/materials/textures</uri>
+              <name>ArmPart/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>1.28453 -6.3 0.96 0 0 0</pose>
+    </model>
+
+        <model name='pulley_part_ariac5'>
+      <plugin name="model_push" filename="libmodel_push.so"/>
+      <link name='pulley_part_ariac::link'>
+        <inertial>
+          <pose frame=''>0 0 0.035145 0 -0 0</pose>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.00191582</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00191582</iyy>
+            <iyz>0</iyz>
+            <izz>0.00341991</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision_core'>
+          <pose frame=''>0 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.05</length>
+              <radius>0.112</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1000000.0</kp>
+                <kd>1.0</kd>
+                <mu1>0.8</mu1>
+                <mu2>0.8</mu2>
+                <maxVel>0.0</maxVel>
+                <minDepth>0.001</minDepth>
+              </ode>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://pulley_part_ariac/meshes/object.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://pulley_part_ariac/materials/scripts</uri>
+              <uri>model://pulley_part_ariac/materials/textures</uri>
+              <name>ArmPart/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>1.28453 -7.2 0.95 0 -0 0</pose>
+    </model>
+    <model name='pulley_part_aria6'>
+      <plugin name="model_push" filename="libmodel_push.so"/>
+      <link name='pulley_part_ariac_clone::pulley_part_ariac::link'>
+        <inertial>
+          <pose frame=''>0 0 0.035145 0 -0 0</pose>
+          <mass>0.5</mass>
+          <inertia>
+            <ixx>0.00191582</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00191582</iyy>
+            <iyz>0</iyz>
+            <izz>0.00341991</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision_core'>
+          <pose frame=''>0 0 -0.025 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.05</length>
+              <radius>0.112</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1000000.0</kp>
+                <kd>1.0</kd>
+                <mu1>0.8</mu1>
+                <mu2>0.8</mu2>
+                <maxVel>0.0</maxVel>
+                <minDepth>0.001</minDepth>
+              </ode>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://pulley_part_ariac/meshes/object.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://pulley_part_ariac/materials/scripts</uri>
+              <uri>model://pulley_part_ariac/materials/textures</uri>
+              <name>ArmPart/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>1.28453 -8.6 0.96 0 0 0</pose>
+    </model>
+  <plugin name="sim_pickplace" filename="libsim_pickplace.so"/>
+ </world>
 </sdf>

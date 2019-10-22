@@ -32,12 +32,10 @@
         args="-urdf
               -param robot_description
               -model larmate200id7l
-              -x 1.0
+              -x 0.7
               -y -1.6
-              -z 0.9"  
+              -z 0.7"  
                  />
-
-
   
    <include file="$(find fanuc_lrmate200id_gazebo)/launch/lrmate200id7l_control.launch" /> 
 
