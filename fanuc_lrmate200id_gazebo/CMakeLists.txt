@@ -39,6 +39,9 @@ set(SOURCES
 add_library(model_push SHARED plugins/MoveObject.cc)
 target_link_libraries(model_push ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES})
 
+add_library(random_model_push SHARED plugins/RandomMoveObject.cc)
+target_link_libraries(random_model_push ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES})
+
 add_library(sim_pickplace SHARED plugins/SimulationPickandPlace.cc  ${SOURCES})
 target_link_libraries(sim_pickplace ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES} ${EIGEN3_LIBRARIES} ${OpenCV_LIBS} ${fanuc_arm_for_chicony})
 install(TARGETS sim_pickplace DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})

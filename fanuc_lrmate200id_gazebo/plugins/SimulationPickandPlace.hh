@@ -13,6 +13,9 @@
 #include <geometry_msgs/Pose.h>
 
 #include <fanuc_arm_for_chicony/utils.h>
+#include <jsk_recognition_msgs/BoundingBox.h>
+#include <jsk_recognition_msgs/BoundingBoxArray.h>
+
 namespace gazebo
 {
 
@@ -32,6 +35,8 @@ private:
 
     ros::Publisher objects_tobe_picked_pub_;
     ros::NodeHandle *nh_;
+    ros::Publisher gtBBX_pub_;
+    tf::TransformListener *listener_;
 
 public:
     SimulationPickandPlace();

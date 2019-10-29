@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /MotionPlanning1
         - /PointCloud21
+        - /BoundingBoxArray1
       Splitter Ratio: 0.742560029
     Tree Height: 405
   - Class: rviz/Help
@@ -272,9 +273,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: 0.591264069
+      Max Intensity: 2.11570334
       Min Color: 0; 0; 0
-      Min Intensity: 0.591261029
+      Min Intensity: 0.685481369
       Name: PointCloud2
       Position Transformer: XYZ
       Queue Size: 10
@@ -287,6 +288,18 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
+    - Class: jsk_rviz_plugin/BoundingBoxArray
+      Enabled: true
+      Name: BoundingBoxArray
+      Topic: /corrected_labelbox
+      Unreliable: false
+      Value: true
+      alpha: 0.800000012
+      color: 25; 255; 0
+      coloring: Auto
+      line width: 0.00499999989
+      only edge: false
+      show coords: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -303,25 +316,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 1.79212582
+      Distance: 2.48155117
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.0601736307
-        Y: -0.539010465
+        X: 0.73798418
+        Y: -0.678474069
         Z: -9.68574909e-07
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.419796199
+      Pitch: 1.56979632
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 3.44493818
+      Yaw: 4.92993784
     Saved: ~
 Window Geometry:
   Displays:

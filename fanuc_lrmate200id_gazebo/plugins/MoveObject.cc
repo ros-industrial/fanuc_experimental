@@ -26,7 +26,7 @@ public:
     void OnUpdate()
     {
         // Apply a small linear velocity to the modeltNsm=
-        this->model->SetLinearVel(ignition::math::Vector3d(0.0, 0.03, 0));
+        this->model->SetLinearVel(ignition::math::Vector3d(0.0, 0.0, 0));
         this->model->SetGravityMode(false);
         ignition::math::Pose3d current_pose = this->model->WorldPose();
         ignition::math::Vector3d current_pos = current_pose.Pos();

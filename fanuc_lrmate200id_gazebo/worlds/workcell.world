@@ -1824,9 +1824,11 @@
     </model>
     <model name='pulley_part_ariac1'>
       <plugin name="model_push" filename="libmodel_push.so"/>
+      <plugin name="random_model_push" filename="librandom_model_push.so"/>
+ 
       <link name='pulley_part_ariac::link'>
         <inertial>
-          <pose frame=''>0 0 0.035145 0 -0 0</pose>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <mass>0.5</mass>
           <inertia>
             <ixx>0.00191582</ixx>
@@ -1839,6 +1841,7 @@
         </inertial>
 
         <visual name='visual'>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <geometry>
             <mesh>
               <uri>model://pulley_part_ariac/meshes/object.dae</uri>
@@ -1859,10 +1862,12 @@
       <pose frame=''>1.28453 -11.2 0.96 0 -0 0</pose>
     </model>
     <model name='pulley_part_aria2'>
-      <plugin name="model_push" filename="libmodel_push.so"/>
+      <plugin name="model_push" filename="libmodel_push.so"/> 
+      <plugin name="random_model_push" filename="librandom_model_push.so"/>
+
       <link name='pulley_part_ariac_clone::pulley_part_ariac::link'>
         <inertial>
-          <pose frame=''>0 0 0.035145 0 -0 0</pose>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <mass>0.5</mass>
           <inertia>
             <ixx>0.00191582</ixx>
@@ -1874,11 +1879,11 @@
           </inertia>
         </inertial>
         <collision name='collision_core'>
-          <pose frame=''>0 0 -0.025 0 -0 0</pose>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <geometry>
             <cylinder>
-              <length>0.05</length>
-              <radius>0.112</radius>
+              <length>0.025</length>
+              <radius>0.056</radius>
             </cylinder>
           </geometry>
           <surface>
@@ -1903,6 +1908,7 @@
           <max_contacts>10</max_contacts>
         </collision>
         <visual name='visual'>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <geometry>
             <mesh>
               <uri>model://pulley_part_ariac/meshes/object.dae</uri>
@@ -1926,9 +1932,11 @@
 
         <model name='pulley_part_aria3'>
       <plugin name="model_push" filename="libmodel_push.so"/>
+      <plugin name="random_model_push" filename="librandom_model_push.so"/>
+
       <link name='pulley_part_ariac::link'>
         <inertial>
-          <pose frame=''>0 0 0.035145 0 -0 0</pose>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <mass>0.5</mass>
           <inertia>
             <ixx>0.00191582</ixx>
@@ -1940,11 +1948,11 @@
           </inertia>
         </inertial>
         <collision name='collision_core'>
-          <pose frame=''>0 0 -0.025 0 -0 0</pose>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <geometry>
             <cylinder>
-              <length>0.05</length>
-              <radius>0.112</radius>
+              <length>0.025</length>
+              <radius>0.056</radius>
             </cylinder>
           </geometry>
           <surface>
@@ -1968,7 +1976,9 @@
           </surface>
           <max_contacts>10</max_contacts>
         </collision>
-        <visual name='visual'>
+        <visual name='visual'> 
+        <pose frame=''>0 0 0.025 0 -0 0</pose>
+
           <geometry>
             <mesh>
               <uri>model://pulley_part_ariac/meshes/object.dae</uri>
@@ -1990,9 +2000,11 @@
     </model>
     <model name='pulley_part_ariac4'>
       <plugin name="model_push" filename="libmodel_push.so"/>
+      <plugin name="random_model_push" filename="librandom_model_push.so"/>
+
       <link name='pulley_part_ariac_clone::pulley_part_ariac::link'>
         <inertial>
-          <pose frame=''>0 0 0.035145 0 -0 0</pose>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <mass>0.5</mass>
           <inertia>
             <ixx>0.00191582</ixx>
@@ -2004,11 +2016,11 @@
           </inertia>
         </inertial>
         <collision name='collision_core'>
-          <pose frame=''>0 0 -0.025 0 -0 0</pose>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <geometry>
             <cylinder>
-              <length>0.05</length>
-              <radius>0.112</radius>
+              <length>0.025</length>
+              <radius>0.056</radius>
             </cylinder>
           </geometry>
           <surface>
@@ -2033,6 +2045,7 @@
           <max_contacts>10</max_contacts>
         </collision>
         <visual name='visual'>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <geometry>
             <mesh>
               <uri>model://pulley_part_ariac/meshes/object.dae</uri>
@@ -2055,9 +2068,11 @@
 
         <model name='pulley_part_ariac5'>
       <plugin name="model_push" filename="libmodel_push.so"/>
+      <plugin name="random_model_push" filename="librandom_model_push.so"/>
+
       <link name='pulley_part_ariac::link'>
         <inertial>
-          <pose frame=''>0 0 0.035145 0 -0 0</pose>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <mass>0.5</mass>
           <inertia>
             <ixx>0.00191582</ixx>
@@ -2069,11 +2084,11 @@
           </inertia>
         </inertial>
         <collision name='collision_core'>
-          <pose frame=''>0 0 -0.025 0 -0 0</pose>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <geometry>
             <cylinder>
-              <length>0.05</length>
-              <radius>0.112</radius>
+              <length>0.025</length>
+              <radius>0.056</radius>
             </cylinder>
           </geometry>
           <surface>
@@ -2098,7 +2113,8 @@
           <max_contacts>10</max_contacts>
         </collision>
         <visual name='visual'>
-          <geometry>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
+           <geometry>
             <mesh>
               <uri>model://pulley_part_ariac/meshes/object.dae</uri>
             </mesh>
@@ -2119,9 +2135,11 @@
     </model>
     <model name='pulley_part_aria6'>
       <plugin name="model_push" filename="libmodel_push.so"/>
+      <plugin name="random_model_push" filename="librandom_model_push.so"/>
+
       <link name='pulley_part_ariac_clone::pulley_part_ariac::link'>
         <inertial>
-          <pose frame=''>0 0 0.035145 0 -0 0</pose>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <mass>0.5</mass>
           <inertia>
             <ixx>0.00191582</ixx>
@@ -2133,11 +2151,11 @@
           </inertia>
         </inertial>
         <collision name='collision_core'>
-          <pose frame=''>0 0 -0.025 0 -0 0</pose>
+          <pose frame=''>0 0 0.025 0 -0 0</pose>
           <geometry>
             <cylinder>
-              <length>0.05</length>
-              <radius>0.112</radius>
+              <length>0.025</length>
+              <radius>0.056</radius>
             </cylinder>
           </geometry>
           <surface>
@@ -2162,7 +2180,8 @@
           <max_contacts>10</max_contacts>
         </collision>
         <visual name='visual'>
-          <geometry>
+        <pose frame=''>0 0 0.025 0 -0 0</pose>
+         <geometry>
             <mesh>
               <uri>model://pulley_part_ariac/meshes/object.dae</uri>
             </mesh>
@@ -2182,5 +2201,9 @@
       <pose frame=''>1.28453 -8.6 0.96 0 0 0</pose>
     </model>
   <plugin name="sim_pickplace" filename="libsim_pickplace.so"/>
+  <physics:ode>
+   <stepTime>1</stepTime>
+   <updateRate>0.5</updateRate>
+ </physics:ode>
  </world>
 </sdf>

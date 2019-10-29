@@ -31,12 +31,13 @@
 		<mass value = "6.215"/>
         <inertia ixx="0.0247272" ixy="-8.0784E-05" ixz="0.00130902" iyy="0.0491285" iyz="-8.0419E-06" izz="0.0472376"/>	</inertial>
 </link>
-<link name = "world"/>
 
+<link name = "world"/>
+  
 <joint name="world_base_joint" type="fixed">
 	<parent link="world"/>
 	<child link="${prefix}base_link" />
-	<origin xyz = "0 0 0" rpy = "0 0 0"/>
+	<origin xyz = "0.7 -1.6 0.7" rpy = "0 0 0"/>
 </joint> 
 
 <gazebo reference= "${prefix}base_link" >
