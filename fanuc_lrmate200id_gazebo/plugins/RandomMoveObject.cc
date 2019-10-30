@@ -36,7 +36,7 @@ public:
     {
         // Apply a small linear velocity to the modeltNsm=
 
-        if ((world_->RealTime() - previous_time) > 0.1)
+        if ((world_->RealTime() - previous_time) > 1.0)
         {
 
             this->model->SetGravityMode(false);

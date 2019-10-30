@@ -1,14 +1,12 @@
 Panels:
   - Class: rviz/Displays
-    Help Height: 84
+    Help Height: 0
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /MotionPlanning1
-        - /PointCloud21
-        - /BoundingBoxArray1
+        - /Global Options1
       Splitter Ratio: 0.742560029
-    Tree Height: 405
+    Tree Height: 150
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -102,6 +100,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          dope_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           link_1:
             Alpha: 1
             Show Axes: false
@@ -215,6 +217,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          dope_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           link_1:
             Alpha: 1
             Show Axes: false
@@ -300,11 +306,32 @@ Visualization Manager:
       line width: 0.00499999989
       only edge: false
       show coords: false
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /dope/rgb_points
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /dope/markers
+      Name: MarkerArray
+      Namespaces:
+        bboxes: true
+        texts: true
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_link
+    Fixed Frame: world
     Frame Rate: 30
   Name: root
   Tools:
@@ -316,16 +343,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.48155117
+      Distance: 4.78853559
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.73798418
-        Y: -0.678474069
-        Z: -9.68574909e-07
+        X: -0.398231983
+        Y: -0.536878169
+        Z: -2.16066792e-06
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
@@ -334,7 +361,7 @@ Visualization Manager:
       Pitch: 1.56979632
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 4.92993784
+      Yaw: 3.268121
     Saved: ~
 Window Geometry:
   Displays:
@@ -344,11 +371,13 @@ Window Geometry:
     collapsed: false
   Hide Left Dock: false
   Hide Right Dock: false
+  Image:
+    collapsed: false
   MotionPlanning:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002ad000003befc0200000007fb000000100044006900730070006c00610079007301000000280000022a000000d700fffffffb0000000800480065006c00700000000342000000bb0000007300fffffffb0000000a0056006900650077007300000003b0000000b0000000ad00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004a00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006701000002580000018e0000018300ffffff00000471000003be00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002ad000003befc0200000008fb000000100044006900730070006c0061007900730100000028000000d7000000d700fffffffb0000000800480065006c00700000000342000000bb0000007300fffffffb0000000a0056006900650077007300000003b0000000b0000000ad00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004a00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006701000001050000018e0000018300fffffffb0000000a0049006d00610067006501000002990000014d0000001600ffffff00000471000003be00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
   Width: 1828

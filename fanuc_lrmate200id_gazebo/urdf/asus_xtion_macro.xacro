@@ -12,6 +12,22 @@
     <axis xyz="0 0 0" />
 </joint>
 
+<joint name="dummy_joint" type="fixed">
+    <parent link="camera_link" />
+    <child link="dummy_link" />
+    <origin rpy="0 1.57 0" xyz=" 0 0 0" />
+    <axis xyz="0 0 0" />
+</joint>
+<link name="dummy_link"/>
+
+<joint name="dope_joint" type="fixed">
+    <parent link="dummy_link" />
+    <child link="dope_link" />
+    <origin rpy="0 0 -1.57" xyz=" 0 0 0" />
+    <axis xyz="0 0 0" />
+</joint>
+
+<link name="dope_link"/>
 
 <link name="camera_link">
 
