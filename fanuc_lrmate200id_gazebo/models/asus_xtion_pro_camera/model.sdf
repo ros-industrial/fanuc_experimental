@@ -37,10 +37,8 @@
       </collision>
       <visual name="visual">
         <geometry>
-          <mesh>
-            <uri>model://asus_xtion_pro_camera/meshes/asus_xtion_pro_camera.dae</uri>
-          </mesh>
-        </geometry>
+             <mesh filename="package://fanuc_lrmate200id_gazebo/models/asus_xtion_pro_camera/meshes/asus_xtion_pro_camera.dae"/>
+         </geometry>
       </visual>
       <sensor name="camera" type="depth">
         <pose>0.0085 0.0105 0.0197 0 0 0</pose>

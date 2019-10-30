@@ -19,13 +19,13 @@
         <collision>
             <origin rpy="-1.57 0 0" xyz="-0.065 -0.065 0" />
             <geometry>
-                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/collision/Gripper_base.STL" scale="0.001 0.001 0.001" />
+                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/collision/Gripper_base.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
         <visual>
             <origin rpy="-1.57 0 0" xyz="-0.065 -0.065 0" />
             <geometry>
-                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/visual/Gripper_base.STL" scale="0.001 0.001 0.001" />
+                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/visual/Gripper_base.dae" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="">
                 <color rgba="0.96 0.76 0.13 1.0" />
@@ -56,13 +56,13 @@
         <collision>
             <origin rpy="-1.57 0 3.14" xyz="0.075 0.038 0.075" />
             <geometry>
-                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/collision/Gripper_finger.STL" scale="0.001 0.001 0.001" />
+                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/collision/Gripper_finger.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
         <visual>
             <origin rpy="-1.57 0 3.14" xyz="0.075 0.038 0.075" />
             <geometry>
-                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/visual/Gripper_finger.STL" scale="0.001 0.001 0.001" />
+                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/visual/Gripper_finger.dae" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="">
                 <color rgba="0.278431372549 0.278431372549 0.278431372549 1.0" />
@@ -91,13 +91,13 @@
         <collision>
             <origin rpy="-1.57 0 0" xyz="-0.075 -0.038 0.075" />
             <geometry>
-                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/collision/Gripper_finger.STL" scale="0.001 0.001 0.001" />
+                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/collision/Gripper_finger.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
         <visual>
             <origin rpy="-1.57 0 0" xyz="-0.075 -0.038 0.075" />
             <geometry>
-                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/visual/Gripper_finger.STL" scale="0.001 0.001 0.001" />
+                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/visual/Gripper_finger.dae" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="">
                 <color rgba="0.278431372549 0.278431372549 0.278431372549 1.0" />
@@ -125,13 +125,13 @@
         <collision>
             <origin rpy="-1.57 0 0" xyz="-0.075 -0.038 0.075" />
             <geometry>
-                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/collision/Gripper_finger.STL" scale="0.001 0.001 0.001" />
+                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/collision/Gripper_finger.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
         <visual>
             <origin rpy="-1.57 0 0" xyz="-0.075 -0.038 0.075" />
             <geometry>
-                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/visual/Gripper_finger.STL" scale="0.001 0.001 0.001" />
+                <mesh filename="package://fanuc_lrmate200id_support/meshes/gripper/visual/Gripper_finger.dae" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="">
                 <color rgba="0.278431372549 0.278431372549 0.278431372549 1.0" />
