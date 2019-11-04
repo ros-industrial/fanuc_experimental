@@ -314,13 +314,13 @@ Visualization Manager:
       Unreliable: false
       Value: true
     - Class: rviz/MarkerArray
-      Enabled: false
-      Marker Topic: /dope/markers
+      Enabled: true
+      Marker Topic: /detected_box_pub
       Name: MarkerArray
       Namespaces:
-        {}
+        DetectionBox: true
       Queue Size: 100
-      Value: false
+      Value: true
     - Class: rviz/MarkerArray
       Enabled: true
       Marker Topic: /gt_labelbox_array
@@ -338,7 +338,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/Image
       Enabled: true
-      Image Topic: /camera/depth/image_raw
+      Image Topic: /dope/segmented_points
       Max Value: 1
       Median window: 5
       Min Value: 0
@@ -364,25 +364,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 1.77932882
+      Distance: 1.99284828
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.626252294
-        Y: -0.29917264
+        X: 0.647500753
+        Y: -0.230074883
         Z: -1.56462147e-06
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.744796336
+      Pitch: 0.764796317
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 3.0563066
+      Yaw: 3.05130649
     Saved: ~
 Window Geometry:
   Displays:
