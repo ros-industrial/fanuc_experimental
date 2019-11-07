@@ -143,7 +143,7 @@ void SimulationPickandPlace::OnUpdate()
 
         jsk_box_msg.pose.orientation = pose_in_camera_frame.orientation;
 
-        jsk_box_msg.dimensions.x = 0.112;
+        jsk_box_msg.dimensions.x = 0.1120;
         jsk_box_msg.dimensions.y = 0.112;
         jsk_box_msg.dimensions.z = 0.05;
         gt_box_array.boxes.push_back(jsk_box_msg);
