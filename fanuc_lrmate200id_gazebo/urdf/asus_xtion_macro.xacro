@@ -8,7 +8,7 @@
 <joint name="camera_joint" type="fixed">
     <parent link="base_link" />
     <child link="camera_link" />
-    <origin rpy="0 1.57 0" xyz="0.6 -0.3 1.3" />
+    <origin rpy="0 1.57 0" xyz="0.6 -0.7 1.1" />
     <axis xyz="0 0 0" />
 </joint>
 
@@ -62,8 +62,8 @@
             <format>R8G8B8</format>
           </image>
           <clip>
-            <near>0.3</near>
-            <far>3.5</far>
+            <near>0.2</near>
+            <far>0.8</far>
           </clip>
         </camera>
         <plugin name="camera_plugin" filename="libgazebo_ros_openni_kinect.so">
@@ -79,8 +79,8 @@
           <depthImageCameraInfoTopicName>/camera/depth/camera_info</depthImageCameraInfoTopicName>
           <pointCloudTopicName>/camera/depth/points</pointCloudTopicName>
           <frameName>camera_link</frameName>
-          <pointCloudCutoff>0.5</pointCloudCutoff>
-          <pointCloudCutoffMax>3.0</pointCloudCutoffMax>
+          <pointCloudCutoff>0.2</pointCloudCutoff>
+          <pointCloudCutoffMax>0.8</pointCloudCutoffMax>
           <distortionK1>0</distortionK1>
           <distortionK2>0</distortionK2>
           <distortionK3>0</distortionK3>
