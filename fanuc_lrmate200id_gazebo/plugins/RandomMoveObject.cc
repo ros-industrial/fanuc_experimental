@@ -43,7 +43,7 @@ public:
             ignition::math::Pose3d current_pose = this->model->WorldPose();
             ignition::math::Vector3d current_pos = current_pose.Pos();
             ignition::math::Quaterniond current_rot(0, 0, 0, 1);
-            current_pos = ignition::math::Vector3d(fRand(1.1, 1.4), fRand(-2.2, -1.6), fRand(0.95, 1.1));
+            current_pos = ignition::math::Vector3d(fRand(1.2, 1.4), fRand(-2.8, -2.2), fRand(1.3, 1.3));
             ignition::math::Pose3d random_pose(current_pos, current_rot);
             this->model->SetWorldPose(random_pose);
             this->model->SetAngularVel(ignition::math::Vector3d(0.0, 0.0, 0.0));
