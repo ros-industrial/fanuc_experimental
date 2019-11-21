@@ -7,7 +7,7 @@ SimulationPickandPlace::SimulationPickandPlace()
     nh_ = new ros::NodeHandle();
     listener_ = new tf::TransformListener();
     objects_tobe_picked_pub_ = nh_->advertise<geometry_msgs::PoseArray>("objects_tobe_picked", 10);
-    gtBBX_pub_ = nh_->advertise<jsk_recognition_msgs::BoundingBoxArray>("/gt_labels", 10);
+    gtBBX_pub_ = nh_->advertise<jsk_recognition_msgs::BoundingBoxArray>("/gt_labels", 1);
 }
 
 SimulationPickandPlace::~SimulationPickandPlace()
@@ -27,6 +27,7 @@ void SimulationPickandPlace::Load(physics::WorldPtr _parent, sdf::ElementPtr /*_
 
 void SimulationPickandPlace::OnUpdate()
 {
+    sleep(0.5);
     geometry_msgs::PoseArray objects_tobe_picked_array;
     std::string robot_model_name = "larmate200id7l";
     std::string gripper_link_name = "Gripper_Base";
@@ -143,9 +144,9 @@ void SimulationPickandPlace::OnUpdate()
 
         jsk_box_msg.pose.orientation = pose_in_camera_frame.orientation;
 
-        jsk_box_msg.dimensions.x = 0.1120;
-        jsk_box_msg.dimensions.y = 0.112;
-        jsk_box_msg.dimensions.z = 0.05;
+        jsk_box_msg.dimensions.x = 0.125; //0.112
+        jsk_box_msg.dimensions.y = 0.125; //0.112
+        jsk_box_msg.dimensions.z = 0.07;  // 0.05
         gt_box_array.boxes.push_back(jsk_box_msg);
     }
     gtBBX_pub_.publish(gt_box_array);

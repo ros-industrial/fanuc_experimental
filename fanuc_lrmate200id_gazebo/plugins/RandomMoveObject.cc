@@ -36,14 +36,14 @@ public:
     {
         // Apply a small linear velocity to the modeltNsm=
 
-        if ((world_->RealTime() - previous_time) > 1.0)
+        if ((world_->RealTime() - previous_time) > 2.0)
         {
 
             this->model->SetGravityMode(false);
             ignition::math::Pose3d current_pose = this->model->WorldPose();
             ignition::math::Vector3d current_pos = current_pose.Pos();
             ignition::math::Quaterniond current_rot(0, 0, 0, 1);
-            current_pos = ignition::math::Vector3d(fRand(1.2, 1.4), fRand(-2.8, -2.2), fRand(1.3, 1.3));
+            current_pos = ignition::math::Vector3d(fRand(1.075, 1.525), fRand(-2.85, -2.15), fRand(1.1, 1.35));
             ignition::math::Pose3d random_pose(current_pos, current_rot);
             this->model->SetWorldPose(random_pose);
             this->model->SetAngularVel(ignition::math::Vector3d(0.0, 0.0, 0.0));
