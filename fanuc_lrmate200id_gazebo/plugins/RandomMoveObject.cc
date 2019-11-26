@@ -45,8 +45,8 @@ public:
             ignition::math::Quaterniond current_rot(0, 0, 0, 1);
             current_pos = ignition::math::Vector3d(fRand(1.075, 1.525), fRand(-2.85, -2.15), fRand(1.1, 1.35));
             ignition::math::Pose3d random_pose(current_pos, current_rot);
-            this->model->SetWorldPose(random_pose);
-            this->model->SetAngularVel(ignition::math::Vector3d(0.0, 0.0, 0.0));
+            //this->model->SetWorldPose(random_pose);
+            //this->model->SetAngularVel(ignition::math::Vector3d(0.0, 0.0, 0.0));
             previous_time = world_->RealTime();
         }
 

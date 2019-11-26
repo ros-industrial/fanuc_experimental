@@ -1509,20 +1509,10 @@
       <pose frame=''>-0.824856 0.000555 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>635 122000000</sim_time>
-      <real_time>235 852711671</real_time>
-      <wall_time>1574218787 311120143</wall_time>
-      <iterations>229993</iterations>
-      <model name='disk_part_ariac'>
-        <pose frame=''>3.15796 -0.654258 -1e-05 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>3.15796 -0.654258 -1e-05 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -0 0 -0 0</acceleration>
-          <wrench>0 0 -0 0 -0 0</wrench>
-        </link>
-      </model>
+      <sim_time>752 588000000</sim_time>
+      <real_time>118 999267854</real_time>
+      <wall_time>1574667109 612568393</wall_time>
+      <iterations>117466</iterations>
       <model name='ground_plane'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -1533,123 +1523,31 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='larmate200id7l'>
-        <pose frame=''>-0 -0 -0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='Finger1'>
-          <pose frame=''>1.27249 -1.56346 1.1924 -0.073985 -1.48109 0.053167</pose>
-          <velocity>-1.09507 0.484343 -9.03801 1.7613 -0.994224 0.262746</velocity>
-          <acceleration>0.000726 -9.1e-05 -0.000125 1.31537 1.5374 -3.09115</acceleration>
-          <wrench>0.000127 -1.6e-05 -2.2e-05 0 -0 0</wrench>
-        </link>
-        <link name='Finger2'>
-          <pose frame=''>1.27085 -1.64344 1.19293 -0.07405 -1.48109 0.053228</pose>
-          <velocity>-1.06355 0.482872 -9.14936 1.7613 -0.994197 0.262746</velocity>
-          <acceleration>-8.6e-05 -0.000227 0.000209 1.31398 1.53946 -3.09084</acceleration>
-          <wrench>-1.5e-05 -4e-05 3.7e-05 0 -0 0</wrench>
-        </link>
-        <link name='Finger3'>
-          <pose frame=''>1.27965 -1.60302 1.28133 -0.074107 -1.48109 0.053281</pose>
-          <velocity>0.50566 0.329193 -9.22124 1.7613 -0.994171 0.262746</velocity>
-          <acceleration>0.000344 -6.1e-05 -0.000232 1.3121 1.53245 -3.09563</acceleration>
-          <wrench>6e-05 -1.1e-05 -4.1e-05 0 -0 0</wrench>
-        </link>
-        <link name='Gripper_Base'>
-          <pose frame=''>1.18066 -1.60122 1.24554 -0.073852 -1.48093 0.053022</pose>
-          <velocity>-0.150059 0.367888 -7.4556 1.76146 -0.986151 0.262687</velocity>
-          <acceleration>0.000325 -0.000134 -0.000123 -1.62214 0.040392 -3.01601</acceleration>
-          <wrench>3.3e-05 -1.3e-05 -1.2e-05 0 -0 0</wrench>
-        </link>
-        <link name='base_link'>
-          <pose frame=''>0.7 -1.6 0.7 0 -0 0</pose>
-          <velocity>0 -0 0 0 -0 0</velocity>
-          <acceleration>0 -0 -0 2e-06 0 -1e-06</acceleration>
-          <wrench>0 -1e-06 -0 0 -0 0</wrench>
-        </link>
-        <link name='link_1'>
-          <pose frame=''>0.7 -1.6 1.03 0 -0 0.00117</pose>
-          <velocity>0 -1.9e-05 0 0 -0 0.836445</velocity>
-          <acceleration>-2.4e-05 1e-06 2e-06 0.032898 0.121525 -0.016027</acceleration>
-          <wrench>-2.4e-05 1e-06 2e-06 0 -0 0</wrench>
-        </link>
-        <link name='link_2'>
-          <pose frame=''>0.749999 -1.59994 1.03003 1.8e-05 -0.023919 0.00117</pose>
-          <velocity>-0.000268 0.041279 0.005275 3.13548 1.28972 -2.305</velocity>
-          <acceleration>-2.2e-05 -9e-06 2e-06 -1.89052 -0.008612 0.584098</acceleration>
-          <wrench>-2.2e-05 -9e-06 2e-06 0 -0 0</wrench>
-        </link>
-        <link name='link_3'>
-          <pose frame=''>0.739477 -1.59997 1.46995 4.4e-05 0.62451 0.001195</pose>
-          <velocity>3.57912 0.034167 0.101069 3.12892 -1.16024 -2.30469</velocity>
-          <acceleration>-5e-05 2e-06 -1e-06 -1.09099 -0.036357 0.445808</acceleration>
-          <wrench>-5e-05 2e-06 -1e-06 0 -0 0</wrench>
-        </link>
-        <link name='link_4'>
-          <pose frame=''>0.760033 -1.59995 1.4985 0.043724 0.624508 0.001245</pose>
-          <velocity>4.08102 0.050312 -0.216737 -2.40575 -1.16085 -2.83464</velocity>
-          <acceleration>-1.5e-05 0.000251 -1.9e-05 2.31092 0.504163 2.44311</acceleration>
-          <wrench>-1.5e-05 0.000251 -1.9e-05 0 -0 0</wrench>
-        </link>
-        <link name='link_5'>
-          <pose frame=''>1.10093 -1.59953 1.25266 0.035605 0.08883 -0.021169</pose>
-          <velocity>-0.035044 0.335509 -6.02298 0.760413 -0.964815 0.342841</velocity>
-          <acceleration>-9.1e-05 -8.5e-05 -1.2e-05 0.383207 -0.17371 1.60421</acceleration>
-          <wrench>-9.1e-05 -8.5e-05 -1.2e-05 0 -0 0</wrench>
-        </link>
-        <link name='link_6'>
-          <pose frame=''>1.18066 -1.60122 1.24553 -0.006649 0.088829 -0.021123</pose>
-          <velocity>-0.149631 0.367854 -7.45617 1.76157 -0.986153 0.262679</velocity>
-          <acceleration>-9.2e-05 0.00053 -7.3e-05 0.208497 -0.00451 -0.014427</acceleration>
-          <wrench>-1.3e-05 7.3e-05 -1e-05 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='part3'>
-        <pose frame=''>3.04112 0.006942 -1e-06 -1.4e-05 -7e-06 -0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>3.04112 0.006942 -1e-06 -1.4e-05 -7e-06 -0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='piston_rod_part_ariac'>
-      <plugin name='random_model_push' filename='librandom_model_push.so'/>
-
-        <pose frame=''>3.81209 -1.01662 -0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>3.81209 -1.01662 -0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 0 0 -0 0</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='pulley_part_aria2'>
-        <pose frame=''>1.2955 -2.60587 1.14525 0 -0 3.14159</pose>
+        <pose frame=''>1.28453 -2.13914 0.919731 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='pulley_part_ariac_clone::pulley_part_ariac::link'>
-          <pose frame=''>1.2955 -2.60587 1.14525 0 -0 3.14159</pose>
+          <pose frame=''>1.28453 -2.13914 0.919731 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='pulley_part_aria3'>
-        <pose frame=''>1.22697 -2.46233 1.29929 0 -0 3.14159</pose>
+        <pose frame=''>1.22697 -2.46233 0.922873 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='pulley_part_ariac::link'>
-          <pose frame=''>1.22697 -2.46233 1.29929 0 -0 3.14159</pose>
+          <pose frame=''>1.22697 -2.46233 0.922873 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='pulley_part_ariac1'>
-        <pose frame=''>1.39179 -2.39067 1.29115 0 -0 3.14159</pose>
+        <pose frame=''>1.39179 -2.39067 0.929132 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='pulley_part_ariac::link'>
-          <pose frame=''>1.39179 -2.39067 1.29115 0 -0 3.14159</pose>
+          <pose frame=''>1.39179 -2.39067 0.929132 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -1691,7 +1589,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>6.705 -1.26667 4.16554 0 0.68364 -2.96379</pose>
+        <pose frame=''>-2.49747 -2.79663 4.66697 0 0.757797 0.154577</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -2090,196 +1988,5 @@
       <pose frame=''>1.28453 -5.4 0.96 0 -0 0</pose>
     </model>
     <plugin name='sim_pickplace' filename='libsim_pickplace.so'/>
-  
-    <model name='piston_rod_part_ariac'>
-    <plugin name='random_model_push' filename='librandom_model_push.so'/>
-
-      <link name='link'>
-        <inertial>
-          <pose frame=''>0 0.05415 0.00355 0 -0 0</pose>
-          <mass>0.5</mass>
-          <inertia>
-            <ixx>0.00109584</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>4.23854e-05</iyy>
-            <iyz>0</iyz>
-            <izz>0.00113354</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision_1'>
-          <pose frame=''>0 0 0.00375 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.059 0.052 0.0075</size>
-            </box>
-          </geometry>
-          <surface>
-            <contact>
-              <ode>
-                <max_vel>0.1</max_vel>
-                <min_depth>0.001</min_depth>
-              </ode>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <collision name='collision_2'>
-          <pose frame=''>0 0.08 0.00375 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.031 0.11 0.0075</size>
-            </box>
-          </geometry>
-          <surface>
-            <contact>
-              <ode>
-                <max_vel>0.1</max_vel>
-                <min_depth>0.001</min_depth>
-              </ode>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://piston_rod_part_ariac/meshes/piston_rod.dae</uri>
-              <scale>0.25 0.25 0.25</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://arm_part_ariac/materials/scripts</uri>
-              <uri>model://arm_part_ariac/materials/textures</uri>
-              <name>ArmPart/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>3.81209 -1.01662 0 0 -0 0</pose>
-    </model>
-    <model name='disk_part_ariac'>
-    <plugin name='random_model_push' filename='librandom_model_push.so'/>
-
-      <link name='link'>
-        <inertial>
-          <pose frame=''>0 0 0.01 0 -0 0</pose>
-          <mass>0.5</mass>
-          <inertia>
-            <ixx>0.0009</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.0009</iyy>
-            <iyz>0</iyz>
-            <izz>0.0012</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0.01158 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.02316</length>
-              <radius>0.0627</radius>
-            </cylinder>
-          </geometry>
-          <surface>
-            <contact>
-              <ode>
-                <max_vel>0</max_vel>
-                <min_depth>0.001</min_depth>
-              </ode>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <scale>0.4 0.4 0.4</scale>
-              <uri>model://disk_part_ariac/meshes/disk.dae</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://arm_part_ariac/materials/scripts</uri>
-              <uri>model://arm_part_ariac/materials/textures</uri>
-              <name>ArmPart/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <collision name='collision_asymmetric_mark'>
-          <pose frame=''>0.03 0.03 0.02 0 -0 0</pose>
-          <max_contacts>10</max_contacts>
-          <geometry>
-            <cylinder>
-              <length>0.012</length>
-              <radius>0.00392125</radius>
-            </cylinder>
-          </geometry>
-          <surface>
-            <contact>
-              <ode>
-                <max_vel>0</max_vel>
-                <min_depth>0.001</min_depth>
-              </ode>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual_asymmetric_mark'>
-          <pose frame=''>0.03 0.03 0.02 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.012</length>
-              <radius>0.00392125</radius>
-            </cylinder>
-          </geometry>
-          <material>
-            <lighting>1</lighting>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/DarkGrey</name>
-            </script>
-            <emissive>0 0 0 1</emissive>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>3.15796 -0.654258 0 0 -0 0</pose>
-    </model>
-
   </world>
 </sdf>
