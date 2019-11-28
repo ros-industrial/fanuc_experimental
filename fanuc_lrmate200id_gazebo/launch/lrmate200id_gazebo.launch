@@ -1,0 +1,42 @@
+<launch>
+
+  <arg name="load_robot_model" default="true" />
+
+  <!-- remap topics to conform to ROS-I specifications -->
+  <remap from="/arm_controller/follow_joint_trajectory" to="/joint_trajectory_action"/>
+  <remap from="/arm_controller/state" to="/feedback_states" />
+  <remap from="/arm_controller/command" to="/joint_path_command"/>
+
+  <arg name="debug" default="false"/>
+  <arg name="gui" default="true"/>
+  <arg name="paused" default="false" />
+  <arg name="headless" default="false"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="headless" value="$(arg headless)"/>
+  </include>
+
+  <group if="$(arg load_robot_model)">
+    <param name="robot_description"
+           command="$(find xacro)/xacro --inorder $(find fanuc_lrmate200id_gazebo)/urdf/lrmate200id_gazebo.xacro" />
+  </group>
+
+  <!-- push robot_description to factory and spawn robot in gazebo -->
+  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" 
+        output="screen" respawn="false"
+        args="-urdf
+              -param robot_description
+              -model larmate200id"
+                 />
+
+
+  
+  <include file="$(find fanuc_lrmate200id_gazebo)/launch/lrmate200id_control.launch" /> 
+
+ 
+
+</launch>
