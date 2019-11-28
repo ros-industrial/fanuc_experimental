@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <xacro:include filename="$(find fanuc_resources)/urdf/common_materials.xacro"/>
+  <xacro:include filename="$(find fanuc_lrmate200id_support)/urdf/common_materials.xacro"/>
 
   <xacro:macro name="fanuc_lrmate200id7l" params="prefix">
     <!-- links: main serial chain -->
