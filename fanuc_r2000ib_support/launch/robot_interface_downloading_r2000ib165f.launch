@@ -1,0 +1,19 @@
+<!--
+  Manipulator specific version of 'robot_interface_streaming.launch'.
+
+  Usage:
+    robot_interface_streaming_r2000ib165f.launch robot_ip:=<value>
+-->
+<launch>
+  <arg name="robot_ip" />
+  <arg name="enable_control_hand" default="true" />
+<!--  <arg name="use_bswap" default="true" />-->
+
+  <rosparam command="load" file="$(find fanuc_r2000ib_support)/config/joint_names_r2000ib165f.yaml" />
+
+  <include file="$(find mitsubishi_driver)/launch/robot_interface_downloading.launch">
+    <arg name="robot_ip"   value="$(arg robot_ip)" />
+    <arg name="enable_control_hand" value="$(arg enable_control_hand)" />
+ <!--     <arg name="use_bswap"  value="$(arg use_bswap)" />-->
+  </include>
+</launch>

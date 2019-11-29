@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>fanuc_r2000ib_support</name>
+  <version>0.0.1</version>
+  <description>
+    <p>
+      Support for the fanuc_r2000ib series of robots
+    </p>
+  </description>
+  <author email="simon.schmeisser@isys-vision.de">Simon Schmeisser (isys vision)</author>
+  <maintainer email="simon.schmeisser@isys-vision.de">Simon Schmeisser (isys vision)</maintainer>
+  <license>Apache2</license>
+  
+  <!-- urls -->
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <test_depend>roslaunch</test_depend>
+  
+  
+  <!-- exec depends -->
+  <exec_depend>fanuc_resources</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  
+  <export>
+    <architecture_independent />
+  </export>
+</package>
