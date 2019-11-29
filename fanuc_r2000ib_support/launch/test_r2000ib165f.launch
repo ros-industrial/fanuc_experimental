@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
   <include file="$(find fanuc_r2000ib_support)/launch/load_r2000ib165f.launch" />
   <param name="use_gui" value="true" />

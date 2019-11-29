@@ -50,8 +50,6 @@
       </collision>
     </link>
     <link name="${prefix}link_3">
-      <!--       The manual and also the model files show this link in the 90deg position (ie right angle) -->
-      <!--       However, the coordinate system treats the straight configuration as 0deg and the limits as asymmetric -->
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
@@ -132,9 +130,7 @@
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
       <axis xyz="0 -1 0"/>
-      <!-- note that the data sheet claims an lower limit of -132 but that is not reachable due to 
-      collisions with the base -->
-      <limit lower="${radians(-90)}" upper="${radians(230)}" effort="0" velocity="${radians(110)}" />
+      <limit lower="${radians(-132)}" upper="${radians(230)}" effort="0" velocity="${radians(110)}" />
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
       <origin xyz="0 0 0.225" rpy="0 0 0"/>
