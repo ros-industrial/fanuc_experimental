@@ -55,5 +55,8 @@
   <include file="$(find fanuc_lrmate200id7l_moveit_config)/launch/default_warehouse_db.launch" if="$(arg db)">
     <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
   </include>
+  
+  <include file="$(find fanuc_arm_for_chicony)/launch/robot_vision_system.launch">
+  </include>
 
 </launch>
