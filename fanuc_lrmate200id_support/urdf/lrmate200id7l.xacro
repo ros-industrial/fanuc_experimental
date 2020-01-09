@@ -6,10 +6,12 @@
   <xacro:gripper prefix=""/>
       <!-- Part 6 Gripper Base Joint -->
 <joint name="camera_joint" type="fixed">
-    <parent link="link_6" />
+    <parent link="link_4" />
     <child link="camera_link" />
-    <origin rpy="3.14 -1.57 0" xyz="0.0 0.0 0.0" />
+    <origin rpy="-0.0 1.50293 -0.06822"
+     xyz="0.32704 0.02164 -0.07475" />
     <axis xyz="0 0 0" />
 </joint>
 <link name="camera_link"/>
 </robot>
+

@@ -59,4 +59,8 @@
   <include file="$(find fanuc_arm_for_chicony)/launch/robot_vision_system.launch">
   </include>
 
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+  <arg name="filters" value="pointcloud"/>
+  </include>
+
 </launch>
