@@ -71,26 +71,6 @@ Visualization Manager:
           Expand Joint Details: false
           Expand Link Details: false
           Expand Tree: false
-          Finger1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          Finger2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          Finger3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          Gripper_Base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           Link Tree Style: Links in Alphabetic Order
           base:
             Alpha: 1
@@ -178,7 +158,7 @@ Visualization Manager:
         Scene Alpha: 1
         Scene Color: 50; 230; 50
         Scene Display Time: 0.20000000298023224
-        Show Scene Geometry: true
+        Show Scene Geometry: false
         Voxel Coloring: Z-Axis
         Voxel Rendering: Occupied Voxels
       Scene Robot:
@@ -188,26 +168,6 @@ Visualization Manager:
           Expand Joint Details: false
           Expand Link Details: false
           Expand Tree: false
-          Finger1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          Finger2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          Finger3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          Gripper_Base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           Link Tree Style: Links in Alphabetic Order
           base:
             Alpha: 1
@@ -298,7 +258,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/Image
       Enabled: true
-      Image Topic: /camera/aligned_depth_to_color/image_raw
+      Image Topic: /camera/color/image_raw
       Max Value: 1
       Median window: 5
       Min Value: 0
@@ -318,10 +278,10 @@ Visualization Manager:
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /gt_labelbox_array
+      Marker Topic: /visualization_marker
       Name: MarkerArray
       Namespaces:
-        {}
+        my_namespace: true
       Queue Size: 100
       Value: true
     - Class: rviz/Axes
@@ -367,7 +327,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.5325558185577393
+      Distance: 4.773014545440674
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -382,10 +342,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.3402035236358643
+      Pitch: 0.550204873085022
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 2.8981330394744873
+      Yaw: 4.479496002197266
     Saved: ~
 Window Geometry:
   Displays:

@@ -46,11 +46,11 @@
     <arg name="moveit_controller_manager" value="fake" if="$(arg fake_execution)"/>
   </include>
 
-  <!-- Sensors Functionality -->
+  <!-- Sensors Functionality 
   <include ns="move_group" file="$(find fanuc_lrmate200id7l_moveit_config)/launch/sensor_manager.launch.xml" if="$(arg allow_trajectory_execution)">
     <arg name="moveit_sensor_manager" value="fanuc_lrmate200id7l" />
   </include>
-
+  -->
   <!-- Start the actual move_group node/action server -->
   <node name="move_group" launch-prefix="$(arg launch_prefix)" pkg="moveit_ros_move_group" type="move_group" respawn="false" output="screen" args="$(arg command_args)">
     <!-- Set the display variable, in case OpenGL code is used internally -->
