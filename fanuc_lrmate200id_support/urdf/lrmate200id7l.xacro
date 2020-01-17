@@ -6,8 +6,8 @@
 <joint name="camera_joint" type="fixed">
     <parent link="link_4" />
     <child link="camera_link" />
-    <origin rpy="-0.0 1.50293 -0.06822"
-     xyz="0.32704 0.02164 -0.07475" />
+    <origin rpy="-0.0037 1.50600 -0.0031"
+     xyz="0.32273 0.01841 -0.06556" />
     <axis xyz="0 0 0" />
 </joint>
 <link name="camera_link"/>

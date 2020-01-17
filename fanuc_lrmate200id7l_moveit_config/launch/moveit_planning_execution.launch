@@ -32,7 +32,7 @@
 
   <!-- run the "real robot" interface nodes -->
   <!--   - this typically includes: robot_state, motion_interface, and joint_trajectory_action nodes -->
-  <!--   - replace these calls with appropriate robot-specific calls or launch files -->
+  <!--   - replace these calls with appropriate robot-specific calls or launch files  -->
   <group unless="$(arg sim)">
     <include file="$(find fanuc_lrmate200id_support)/launch/robot_interface_streaming_lrmate200id7l.launch" >
       <arg name="robot_ip" value="$(arg robot_ip)"/>
@@ -56,11 +56,13 @@
     <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
   </include>
   
+ 
   <include file="$(find fanuc_arm_for_chicony)/launch/robot_vision_system.launch">
   </include>
 
   <include file="$(find realsense2_camera)/launch/rs_camera.launch">
   <arg name="filters" value="pointcloud"/>
-  </include>
 
+  </include>
+ 
 </launch>
