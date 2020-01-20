@@ -158,7 +158,7 @@ Visualization Manager:
         Scene Alpha: 1
         Scene Color: 50; 230; 50
         Scene Display Time: 0.20000000298023224
-        Show Scene Geometry: false
+        Show Scene Geometry: true
         Voxel Coloring: Z-Axis
         Voxel Rendering: Occupied Voxels
       Scene Robot:
@@ -273,7 +273,7 @@ Visualization Manager:
       Marker Topic: /detected_box_pub
       Name: MarkerArray
       Namespaces:
-        DetectionBox: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -308,7 +308,7 @@ Visualization Manager:
       Marker Topic: /grab_object_poses
       Name: MarkerArray
       Namespaces:
-        GrabObjectPoseArray: true
+        {}
       Queue Size: 100
       Value: true
   Enabled: true
