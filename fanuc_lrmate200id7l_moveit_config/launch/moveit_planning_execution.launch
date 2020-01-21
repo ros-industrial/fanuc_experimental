@@ -47,22 +47,25 @@
     <arg name="publish_monitored_planning_scene" value="true" />
   </include>
 
-  <include file="$(find fanuc_lrmate200id7l_moveit_config)/launch/moveit_rviz.launch">
+  <!--
+
+   <include file="$(find fanuc_lrmate200id7l_moveit_config)/launch/moveit_rviz.launch">
     <arg name="config" value="true"/>
   </include>
-
+  -->
   <!-- If database loading was enabled, start mongodb as well -->
   <include file="$(find fanuc_lrmate200id7l_moveit_config)/launch/default_warehouse_db.launch" if="$(arg db)">
     <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
   </include>
   
- 
   <include file="$(find fanuc_arm_for_chicony)/launch/robot_vision_system.launch">
+  </include>
+
+  <include file="$(find fanuc_arm_for_chicony)/launch/robot_gui_control.launch">
   </include>
 
   <include file="$(find realsense2_camera)/launch/rs_camera.launch">
   <arg name="filters" value="pointcloud"/>
-
   </include>
  
 </launch>
