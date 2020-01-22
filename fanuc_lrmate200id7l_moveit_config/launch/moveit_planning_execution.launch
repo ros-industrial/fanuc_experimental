@@ -1,6 +1,17 @@
 <launch>
   <!-- The planning and execution components of MoveIt! configured to run -->
   <!-- using the ROS-Industrial interface. -->
+
+  <include file="$(find fanuc_arm_for_chicony)/launch/robot_vision_system.launch">
+  </include>
+  <!--
+  <include file="$(find fanuc_arm_for_chicony)/launch/robot_gui_control.launch">
+  </include>
+  -->
+
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+  <arg name="filters" value="pointcloud"/>
+  </include>
  
   <!-- Non-standard joint names:
        - Create a file [robot_moveit_config]/config/joint_names.yaml
@@ -58,14 +69,6 @@
     <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
   </include>
   
-  <include file="$(find fanuc_arm_for_chicony)/launch/robot_vision_system.launch">
-  </include>
 
-  <include file="$(find fanuc_arm_for_chicony)/launch/robot_gui_control.launch">
-  </include>
-
-  <include file="$(find realsense2_camera)/launch/rs_camera.launch">
-  <arg name="filters" value="pointcloud"/>
-  </include>
  
 </launch>
