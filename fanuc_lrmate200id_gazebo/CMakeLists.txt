@@ -21,7 +21,7 @@ endif()
 
 include_directories(include ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS} ${SDFormat_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIR}  )
 include_directories(include ${fanuc_arm_for_chicony_INCLUDE_DIRS})
-include_directories(include /home/atas/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/include/)
+include_directories(include ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/include/)
 
 catkin_package(
   #INCLUDE_DIRS  ${GAZEBO_INCLUDE_DIRS}
@@ -31,10 +31,10 @@ catkin_package(
 )  
 
 set(SOURCES
-      /home/atas/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/src/pickplace/PickandPlacer.cpp
-      /home/atas/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/src/utils.cpp
-      /home/atas/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/src/control/RobotController.cpp
-      /home/atas/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/src/pickplace/PickandPlacer.cpp)
+      ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/src/pickplace/PickandPlacer.cpp
+      ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/src/utils.cpp
+      ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/src/control/RobotController.cpp
+      ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/src/pickplace/PickandPlacer.cpp)
  
 add_library(model_push SHARED plugins/MoveObject.cc)
 target_link_libraries(model_push ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES})
