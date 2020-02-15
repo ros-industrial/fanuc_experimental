@@ -1509,10 +1509,10 @@
       <pose frame=''>-0.824856 0.000555 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>752 588000000</sim_time>
-      <real_time>118 999267854</real_time>
-      <wall_time>1574667109 612568393</wall_time>
-      <iterations>117466</iterations>
+      <sim_time>977 109000000</sim_time>
+      <real_time>279 600285442</real_time>
+      <wall_time>1581750762 76291840</wall_time>
+      <iterations>224521</iterations>
       <model name='ground_plane'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -1524,60 +1524,50 @@
         </link>
       </model>
       <model name='pulley_part_aria2'>
-        <pose frame=''>1.28453 -2.13914 0.919731 0 -0 0</pose>
+        <pose frame=''>0.632921 -0.339302 0.147062 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='pulley_part_ariac_clone::pulley_part_ariac::link'>
-          <pose frame=''>1.28453 -2.13914 0.919731 0 -0 0</pose>
+          <pose frame=''>0.632921 -0.339302 0.147062 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='pulley_part_aria3'>
-        <pose frame=''>1.22697 -2.46233 0.922873 0 -0 3.14159</pose>
+        <pose frame=''>0.68338 0.008539 0.137078 0 -0 3.14159</pose>
         <scale>1 1 1</scale>
         <link name='pulley_part_ariac::link'>
-          <pose frame=''>1.22697 -2.46233 0.922873 0 -0 3.14159</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='pulley_part_ariac1'>
-        <pose frame=''>1.39179 -2.39067 0.929132 0 -0 3.14159</pose>
-        <scale>1 1 1</scale>
-        <link name='pulley_part_ariac::link'>
-          <pose frame=''>1.39179 -2.39067 0.929132 0 -0 3.14159</pose>
+          <pose frame=''>0.68338 0.008539 0.137078 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='workcell'>
-        <pose frame=''>0.083397 -0.203498 0 0 -0 1.57</pose>
+        <pose frame=''>-0.50371 -0.093129 -0.785884 0 -0 1.57</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>0.083397 -0.203498 0 0 -0 1.57</pose>
+          <pose frame=''>-0.50371 -0.093129 -0.785884 0 -0 1.57</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='workcell_bin'>
-        <pose frame=''>0.440564 -1.15651 0 0 -0 0</pose>
+        <pose frame=''>-0.414587 0.862952 -0.587051 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>0.440564 -1.15651 0 0 -0 0</pose>
+          <pose frame=''>-0.414587 0.862952 -0.587051 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='workcell_bin_clone'>
-        <pose frame=''>0.445158 -2.08106 0 0 -0 0</pose>
+        <pose frame=''>-0.433055 -0.81208 -0.563304 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>0.445158 -2.08106 0 0 -0 0</pose>
+          <pose frame=''>-0.433055 -0.81208 -0.563304 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -1589,7 +1579,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-2.49747 -2.79663 4.66697 0 0.757797 0.154577</pose>
+        <pose frame=''>-4.36831 -0.90844 3.81815 -0 0.537796 -0.132644</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -1831,43 +1821,6 @@
         <kinematic>0</kinematic>
       </link>
       <pose frame=''>0.389128 -1.10309 0 0 -0 0</pose>
-    </model>
-    <model name='pulley_part_ariac1'>
-      <plugin name='model_push' filename='libmodel_push.so'/>
-      <plugin name='random_model_push' filename='librandom_model_push.so'/>
-      <link name='pulley_part_ariac::link'>
-        <inertial>
-          <pose frame=''>0 0 0.025 0 -0 0</pose>
-          <mass>0.5</mass>
-          <inertia>
-            <ixx>0.00191582</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.00191582</iyy>
-            <iyz>0</iyz>
-            <izz>0.00341991</izz>
-          </inertia>
-        </inertial>
-        <visual name='visual'>
-          <pose frame=''>0 0 0.025 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://pulley_part_ariac/meshes/object.dae</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://pulley_part_ariac/materials/scripts</uri>
-              <uri>model://pulley_part_ariac/materials/textures</uri>
-              <name>ArmPart/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>1.28453 -11.2 0.96 0 -0 0</pose>
     </model>
     <model name='pulley_part_aria2'>
       <plugin name='model_push' filename='libmodel_push.so'/>
