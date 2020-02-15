@@ -1,5 +1,15 @@
 <launch>
 
+  <include file="$(find fanuc_arm_for_chicony)/launch/robot_vision_system.launch">
+  </include>
+
+  <node name="rqt_gui" pkg="rqt_gui" type="rqt_gui" args="--perspective-file $(find fanuc_arm_for_chicony)/cfg/sim.perspective"/>
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find fanuc_arm_for_chicony)/cfg/sim.rviz" />
+  <!--
+  <include file="$(find fanuc_arm_for_chicony)/launch/robot_gui_control.launch">
+  </include>
+  -->
+
   <!-- By default, we do not start a database (it can be large) -->
   <arg name="db" default="false" />
   <!-- Allow user to specify database location -->
@@ -19,7 +29,7 @@
   <arg name="use_gui" default="false" />
 
   <!-- Gazebo specific options -->
-  <arg name="gazebo_gui" default="true"/>
+  <arg name="gazebo_gui" default="false"/>
   <arg name="paused" default="false"/>
   <!-- By default, use the urdf location provided from the package -->
   <arg name="urdf_path" default="$(find fanuc_lrmate200id_gazebo)/urdf/lrmate200id7l_gazebo.xacro"/>
@@ -52,12 +62,7 @@
     <arg name="info" value="true"/>
     <arg name="debug" value="$(arg debug)"/>
   </include>  
-
-  <!-- Run Rviz and load the default config to see the state of the move_group node -->
-  <include file="$(find fanuc_lrmate200id7l_moveit_config)/launch/moveit_rviz.launch">
-    <arg name="config" value="true"/>
-    <arg name="debug" value="$(arg debug)"/>
-  </include>
+ 
 
   <!-- If database loading was enabled, start mongodb as well -->
   <include file="$(find fanuc_lrmate200id7l_moveit_config)/launch/default_warehouse_db.launch" if="$(arg db)">
