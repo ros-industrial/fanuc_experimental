@@ -3,7 +3,7 @@
   <include file="$(find fanuc_arm_for_chicony)/launch/robot_vision_system.launch">
   </include>
 
-  <node name="rqt_gui" pkg="rqt_gui" type="rqt_gui" args="--perspective-file $(find fanuc_arm_for_chicony)/cfg/sim.perspective"/>
+  <node name="rqt_gui_window" pkg="rqt_gui" type="rqt_gui" args="--perspective-file $(find fanuc_arm_for_chicony)/cfg/sim.perspective"/>
   <node type="rviz" name="rviz" pkg="rviz" args="-d $(find fanuc_arm_for_chicony)/cfg/sim.rviz" />
   <!--
   <include file="$(find fanuc_arm_for_chicony)/launch/robot_gui_control.launch">
