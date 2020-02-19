@@ -33,8 +33,8 @@
   <exec_depend>xacro</exec_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>gazebo_ros</build_depend>
-  <build_depend>fanuc_arm_for_chicony</build_depend>
-  <exec_depend>fanuc_arm_for_chicony</exec_depend>
+  <build_depend>arm_perception_utilities</build_depend>
+  <exec_depend>arm_perception_utilities</exec_depend>
 
 
   <build_export_depend>roscpp</build_export_depend>

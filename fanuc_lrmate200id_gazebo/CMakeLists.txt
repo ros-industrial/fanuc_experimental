@@ -9,7 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
   gazebo_plugins
   roscpp
-  fanuc_arm_for_chicony
+  arm_perception_utilities
  )
 
 find_package(gazebo 9 REQUIRED)
@@ -20,21 +20,21 @@ endif()
 
 
 include_directories(include ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS} ${SDFormat_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIR}  )
-include_directories(include ${fanuc_arm_for_chicony_INCLUDE_DIRS})
-include_directories(include ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/include/)
+include_directories(include ${arm_perception_utilities_INCLUDE_DIRS})
+include_directories(include ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/arm_perception_utilities/include/)
 
 catkin_package(
   #INCLUDE_DIRS  ${GAZEBO_INCLUDE_DIRS}
   LIBRARIES  
   CATKIN_DEPENDS roscpp gazebo_ros  
-#  DEPENDS system_lib EIGEN3 fanuc_arm_for_chicony
+#  DEPENDS system_lib EIGEN3 arm_perception_utilities
 )  
 
 set(SOURCES
-      ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/src/pickplace/PickandPlacer.cpp
-      ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/src/utils.cpp
-      ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/src/control/RobotController.cpp
-      ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/fanuc_arm_for_chicony/src/pickplace/PickandPlacer.cpp)
+      ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/arm_perception_utilities/src/pickplace/PickandPlacer.cpp
+      ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/arm_perception_utilities/src/utils.cpp
+      ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/arm_perception_utilities/src/control/RobotController.cpp
+      ~/catkin_ws/src/ROS_FANUC_LRMATE200ID/arm_perception_utilities/src/pickplace/PickandPlacer.cpp)
  
 add_library(model_push SHARED plugins/MoveObject.cc)
 target_link_libraries(model_push ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES})
@@ -43,7 +43,7 @@ add_library(random_model_push SHARED plugins/RandomMoveObject.cc)
 target_link_libraries(random_model_push ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES})
 
 add_library(sim_pickplace SHARED plugins/SimulationPickandPlace.cc  ${SOURCES})
-target_link_libraries(sim_pickplace ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES} ${EIGEN3_LIBRARIES} ${OpenCV_LIBS} ${fanuc_arm_for_chicony})
+target_link_libraries(sim_pickplace ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES} ${EIGEN3_LIBRARIES} ${OpenCV_LIBS} ${arm_perception_utilities})
 install(TARGETS sim_pickplace DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 add_dependencies(sim_pickplace ${PROJECT_NAME}_EXPORTED_TARGETS})
 
