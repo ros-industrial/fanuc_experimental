@@ -19,17 +19,3 @@ arm_controller:
   stop_trajectory_duration: 0.5
   state_publish_rate:  25
   action_monitor_rate: 10
-
-
-Gripper_Finger1_position_controller:
-  type: position_controllers/JointPositionController
-  joint: Gripper_Finger1
-  pid: {p: 50.0, i: 0.01, d: 5.0}
-Gripper_Finger2_position_controller:
-  type: position_controllers/JointPositionController
-  joint: Gripper_Finger2
-  pid: {p: 50.0, i: 0.01, d: 5.0}
-Gripper_Finger3_position_controller:
-  type: position_controllers/JointPositionController
-  joint: Gripper_Finger3
-  pid: {p: 50.0, i: 0.01, d: 5.0}              

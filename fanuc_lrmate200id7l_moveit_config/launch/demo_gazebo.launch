@@ -1,14 +1,5 @@
 <launch>
 
-  <include file="$(find arm_perception_utilities)/launch/robot_vision_system.launch">
-  </include>
-
-  <node name="rqt_gui_window" pkg="rqt_gui" type="rqt_gui" args="--perspective-file $(find arm_perception_utilities)/cfg/sim.perspective"/>
-  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find arm_perception_utilities)/cfg/sim.rviz" />
-  <!--
-  <include file="$(find arm_perception_utilities)/launch/robot_gui_control.launch">
-  </include>
-  -->
 
   <!-- By default, we do not start a database (it can be large) -->
   <arg name="db" default="false" />
@@ -26,13 +17,7 @@
   It also provides a GUI to move the simulated robot around "manually".
   This corresponds to moving around the real robot without the use of MoveIt.
   -->
-  <arg name="use_gui" default="false" />
 
-  <!-- Gazebo specific options -->
-  <arg name="gazebo_gui" default="false"/>
-  <arg name="paused" default="false"/>
-  <!-- By default, use the urdf location provided from the package -->
-  <arg name="urdf_path" default="$(find fanuc_lrmate200id_gazebo)/urdf/lrmate200id7l_gazebo.xacro"/>
 
   <!-- launch the gazebo simulator and spawn the robot -->
   <include file="$(find fanuc_lrmate200id_gazebo)/launch/lrmate200id7l_gazebo.launch" >
@@ -43,17 +28,6 @@
     <arg name="load_robot_description" value="false"/>
   </include>
 
-  <!-- If needed, broadcast static tf for robot root -->
-  
-
-  <!-- We do not have a robot connected, so publish fake joint states -->
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-    <param name="use_gui" value="$(arg use_gui)"/>
-    <rosparam param="source_list">[/joint_states]</rosparam>
-  </node>
-
-  <!-- Given the published joint states, publish tf for the robot links -->
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
 
   <!-- Run the main MoveIt! executable without trajectory execution (we do not have controllers configured by default) -->
   <include file="$(find fanuc_lrmate200id7l_moveit_config)/launch/move_group.launch">

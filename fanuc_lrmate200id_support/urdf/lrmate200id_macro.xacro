@@ -18,6 +18,13 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/base_link.stl"/>
         </geometry>
       </collision>
+      <inertial>
+          <mass value="10.733459"/>
+          <origin xyz="0.014288 0.000001 0.122264" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.096590" ixy="-0.000005" ixz="-0.003803"
+                                  iyy="0.087591"  iyz="-0.000001"
+                                                  izz="0.081632"/>
+      </inertial>
     </link>
     <link name="${prefix}link_1">
       <visual>
@@ -33,6 +40,13 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_1.stl"/>
         </geometry>
       </collision>
+      <inertial>
+          <mass value="16.934564"/>
+          <origin xyz="0.019143 0.024764 -0.064596" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.222318" ixy="0.016499" ixz="0.023794"
+                                  iyy="0.208959" iyz="0.031663"
+                                                 izz="0.157081"/>
+      </inertial>
     </link>
     <link name="${prefix}link_2">
       <visual>
@@ -48,6 +62,13 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_2.stl"/>
         </geometry>
       </collision>
+      <inertial>
+          <mass value="12.98711"/>
+          <origin xyz="-0.000008 0.221181 0.173052" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.425299" ixy="0.000005" ixz="-0.000004"
+                                  iyy="0.452311" iyz="-0.002920"
+                                                 izz="0.054493"/>
+      </inertial>
     </link>
     <link name="${prefix}link_3">
       <visual>
@@ -63,6 +84,13 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_3.stl"/>
         </geometry>
       </collision>
+      <inertial>
+          <mass value="7.50151"/>
+          <origin xyz="0.000002 0.065008 0.003572" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.058902" ixy="0.000000" ixz="0.000001"
+                                  iyy="0.056884" iyz="-0.003672"
+                                                 izz="0.034271"/>
+      </inertial>
     </link>
     <link name="${prefix}link_4">
       <visual>
@@ -78,6 +106,13 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_4.stl"/>
         </geometry>
       </collision>
+      <inertial>
+          <mass value="4.54015"/>
+          <origin xyz="-0.002488 0.049988 0.296156" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.043246" ixy="0.000003" ixz="-0.000683"
+                                  iyy="0.038394" iyz="-0.000004"
+                                                 izz="0.014525"/>
+      </inertial>
     </link>
     <link name="${prefix}link_5">
       <visual>
@@ -93,6 +128,13 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_5.stl"/>
         </geometry>
       </collision>
+      <inertial>
+          <mass value="0.56876"/>
+          <origin xyz="0.000000 0.049931 0.222823" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.001084" ixy="0.000000" ixz="0.000000"
+                                  iyy="0.001123" iyz="0.000001"
+                                                 izz="0.000383"/>
+      </inertial>
     </link>
     <link name="${prefix}link_6">
       <visual>
@@ -108,6 +150,13 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_6.stl"/>
         </geometry>
       </collision>
+      <inertial>
+          <mass value="0.03098"/>
+          <origin xyz="-0.000243 0.050000 -0.006293" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.000012" ixy="0.000000" ixz="0.000000"
+                                  iyy="0.000011" iyz="0.000000"
+                                                 izz="0.000022"/>
+      </inertial>
     </link>
 
     <!-- joints: main serial chain -->

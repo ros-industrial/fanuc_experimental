@@ -2,14 +2,5 @@
 <robot name="fanuc_lrmate200id7l" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <xacro:include filename="$(find fanuc_lrmate200id_support)/urdf/lrmate200id7l_macro.xacro"/>
   <xacro:fanuc_lrmate200id7l prefix=""/>
-       <!-- Part 6 Gripper Base Joint -->
-<joint name="camera_joint" type="fixed">
-    <parent link="link_4" />
-    <child link="camera_link" />
-    <origin rpy="-0.0037 1.50600 -0.0031"
-     xyz="0.32273 0.01841 -0.06556" />
-    <axis xyz="0 0 0" />
-</joint>
-<link name="camera_link"/>
 </robot>
 

@@ -4,13 +4,15 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot name="fanuc_lrmate200id7l" xmlns:xacro="http://www.ros.org/wiki/xacro">
-<xacro:include filename="$(find fanuc_lrmate200id_gazebo)/urdf/lrmate200id7l_gazebo_macro.xacro"/>
-<xacro:include filename="$(find fanuc_lrmate200id_gazebo)/urdf/gripper_macro.xacro"/>
-<xacro:include filename="$(find fanuc_lrmate200id_gazebo)/urdf/asus_xtion_macro.xacro"/>
+<xacro:include filename="$(find fanuc_lrmate200id_gazebo)/urdf/lrmate200id7l_macro.xacro"/>
+  <xacro:fanuc_lrmate200id7l_robot prefix=""/>
 
-<xacro:fanuc_lrmate200id7l prefix=""/>
-<xacro:gripper prefix=""/>
-<xacro:asus_xtion prefix=""/>
-
+  <!-- Fix robot to Gazebo world -->
+  <link name="world"/>
+  <joint name="world-base_link-fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
 
 </robot>

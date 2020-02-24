@@ -7,5 +7,5 @@
   <!-- load the arm controller -->
   <rosparam file="$(find fanuc_lrmate200id_gazebo)/config/lrmate200id_arm_controller.yaml" command="load" />
   <node name="lrmate200id_gazebo_controller_spawner" pkg="controller_manager" type="spawner"
-        args="arm_controller Gripper_Finger1_position_controller Gripper_Finger2_position_controller Gripper_Finger3_position_controller" />
+        args="arm_controller" />
 </launch>

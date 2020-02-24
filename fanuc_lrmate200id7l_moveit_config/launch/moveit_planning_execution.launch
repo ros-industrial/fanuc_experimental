@@ -1,22 +1,6 @@
 <launch>
   <!-- The planning and execution components of MoveIt! configured to run -->
   <!-- using the ROS-Industrial interface. -->
-
-  <include file="$(find arm_perception_utilities)/launch/robot_vision_system.launch">
-  </include>
-
-
-
-  <node name="rqt_gui" pkg="rqt_gui" type="rqt_gui" args="--perspective-file $(find arm_perception_utilities)/cfg/default.perspective"/>
-  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find arm_perception_utilities)/cfg/default.rviz" />
-  <!--
-  <include file="$(find arm_perception_utilities)/launch/robot_gui_control.launch">
-  </include>
-  -->
-
-  <include file="$(find realsense2_camera)/launch/rs_camera.launch">
-  <arg name="filters" value="pointcloud"/>
-  </include>
  
   <!-- Non-standard joint names:
        - Create a file [robot_moveit_config]/config/joint_names.yaml

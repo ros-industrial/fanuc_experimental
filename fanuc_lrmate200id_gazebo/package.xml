@@ -13,6 +13,7 @@
   </description>
   <author>G.A. vd. Hoorn (TU Delft Robotics Institute)</author>
   <author email="www.kentaro.wada@gmail.com">Kentaro Wada</author>
+  <author email="fetulahatas1@gmail.com"> Fetullah Atas</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
   <license>BSD</license>
 
@@ -22,35 +23,13 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <test_depend>roslaunch</test_depend>
-
-  <exec_depend>controller_manager</exec_depend>
-  <exec_depend>fanuc_lrmate200id_support</exec_depend>
+  <exec_depend>gazebo</exec_depend>
   <exec_depend>gazebo_ros</exec_depend>
-  <exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend>gazebo_ros_control</exec_depend>
+  <exec_depend>gazebo_ros_pkgs</exec_depend>
   <exec_depend>joint_state_controller</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend>position_controllers</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
-  <exec_depend>xacro</exec_depend>
-  <build_depend>roscpp</build_depend>
-  <build_depend>gazebo_ros</build_depend>
-  <build_depend>arm_perception_utilities</build_depend>
-  <exec_depend>arm_perception_utilities</exec_depend>
-
-
-  <build_export_depend>roscpp</build_export_depend>
-  <depend>gazebo_plugins</depend>
-
-  <export>
-    <architecture_independent />
-    <rosindex>
-      <tags>
-        <tag>gazebo</tag>
-        <tag>fanuc</tag>
-        <tag>industrial</tag>
-        <tag>ros-industrial</tag>
-        <tag>lrmate200id</tag>
-        <tag>experimental</tag>
-      </tags>
-    </rosindex>
-  </export>
+  <exec_depend>ros_controllers</exec_depend>
 </package>
