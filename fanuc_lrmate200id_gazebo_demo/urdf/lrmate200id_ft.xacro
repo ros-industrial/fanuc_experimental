@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="fanuc_lrmate200id" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find fanuc_lrmate200id_support)/urdf/lrmate200id_macro.xacro"/>
+  <xacro:include filename="$(find fanuc_lrmate200id_gazebo)/urdf/lrmate200id_macro.xacro"/>
+  <xacro:fanuc_lrmate200id prefix=""/>
+
+  <gazebo reference="joint_6">
+    <provideFeedback>true</provideFeedback>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="ft_sensor" filename="libgazebo_ros_ft_sensor.so">
+      <updateRate>100.0</updateRate>
+      <topicName>ft_sensor</topicName>
+      <jointName>joint_6</jointName>
+    </plugin>
+  </gazebo>
+
+  <!-- fix the base to the Gazebo world -->
+  <link name="world" />
+  <joint name="fixed" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
+
+</robot>

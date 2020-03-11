@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<robot name="kiva_pod">
+
+  <link name="kiva_pod_body">
+    <visual>
+      <origin rpy="1.57 0 1.57" xyz="0 0 -1.18"/>
+      <geometry>
+        <mesh filename="package://jsk_apc2015_common/models/kiva_pod/meshes/pod_lowres.stl"/>
+      </geometry>
+      <material name="darkgray">
+        <color rgba=".2 .2 .2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="1.57 0 1.57" xyz="0 0 -1.18"/>
+      <geometry>
+        <mesh filename="package://jsk_apc2015_common/models/kiva_pod/meshes/pod_lowres.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+</robot>
