@@ -5,7 +5,7 @@
   <version>0.1.0</version>
   <description>
     <p>
-      ROS-I support package for the Fanuc R-2000iB/210F manipulator.
+      ROS-Industrial support package for the Fanuc R-2000iB (and variants).
     </p>
   </description>
   <author email="ademola.oridate@wsrobots.com">Ademola Oridate (Wilder Systems)</author>
