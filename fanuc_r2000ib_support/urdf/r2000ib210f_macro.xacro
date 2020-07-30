@@ -112,7 +112,7 @@
 
     <!-- joints: main serial chain -->
     <joint name="${prefix}joint_1" type="revolute">
-      <origin xyz="0 0 0.67" rpy="0 0 0"/>
+      <origin xyz="0 0 0.670" rpy="0 0 0"/>
       <parent link="${prefix}base_link"/>
       <child link="${prefix}link_1"/>
       <axis xyz="0 0 1"/>
