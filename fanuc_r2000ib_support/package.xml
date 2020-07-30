@@ -12,6 +12,22 @@
       for Fanuc R-2000iB manipulators. This currently includes the /210F
       variant only.
     </p>
+    <p><b>Specifications</b>:</p>
+    <ul>
+      <li>R-2000iB/210F - "J1 - Normal Range"</li>
+    </ul>
+    <p>
+      Joint limits and maximum joint velocities are based on the information in
+      the <em>FANUC R-2000iB Mechanical Unit Operator's Manual</em>
+      version <em>B-82234EN/11</em>. All urdfs are based on the default motion
+      and joint velocity limits, unless noted otherwise (ie: no support for
+      high speed joints, extended / limited motion ranges or other options).
+    </p>
+    <p>
+      Before using any of the configuration files and / or meshes included
+      in this package, be sure to check they are correct for the particular
+      robot model and configuration you intend to use them with.
+    </p>
   </description>
   <author email="ademola.oridate@wsrobots.com">Ademola Oridate (Wilder Systems)</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
