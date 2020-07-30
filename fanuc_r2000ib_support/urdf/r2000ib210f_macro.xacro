@@ -133,14 +133,14 @@
       <limit lower="${radians(-132)}" upper="${radians(230)}" effort="0" velocity="${radians(95)}"/>
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
-      <origin xyz="1.28 0 0.225" rpy="0 0 0"/>
+      <origin xyz="0 0 0.225" rpy="0 0 0"/>
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
       <axis xyz="-1 0 0"/>
       <limit lower="${radians(-360)}" upper="${radians(360)}" effort="0" velocity="${radians(120)}"/>
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="1.280 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
       <axis xyz="0 -1 0"/>
