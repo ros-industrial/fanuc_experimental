@@ -7,6 +7,11 @@
     <p>
       ROS-Industrial support package for the Fanuc R-2000iB (and variants).
     </p>
+    <p>
+      This package contains configuration data, 3D models and launch files
+      for Fanuc R-2000iB manipulators. This currently includes the /210F
+      variant only.
+    </p>
   </description>
   <author email="ademola.oridate@wsrobots.com">Ademola Oridate (Wilder Systems)</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
