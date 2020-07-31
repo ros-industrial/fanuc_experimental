@@ -150,7 +150,7 @@
       <origin xyz="0.235 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
-      <axis xyz="0 0 -1"/>
+      <axis xyz="-1 0 0"/>
       <limit lower="${radians(-360)}" upper="${radians(360)}" effort="0" velocity="${radians(190)}"/>
     </joint>
 
