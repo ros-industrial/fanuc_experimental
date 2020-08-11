@@ -9,18 +9,27 @@
     </p>
     <p>
       This package contains configuration data, 3D models and launch files
-      for Fanuc LR Mate 200iD manipulators. This currently includes the
-      base model and the /7L.
+      for Fanuc LR Mate 200iD manipulators. This includes the base
+      model (/7C, /7WP), /7H, /7L, /7LC and the /4S, /4SC and /4SH.
+      The variants in parentheses are supported by the files for the variant
+      immediately preceeding the parentheses.
     </p>
     <p><b>Specifications</b>:</p>
     <ul>
       <li>LR Mate 200iD - "J1 - Normal Range"</li>
+      <li>LR Mate 200iD/4S - "J1 - Normal Range"</li>
+      <li>LR Mate 200iD/4SC - "J1 - Normal Range"</li>
+      <li>LR Mate 200iD/4SH - "J1 - Normal Range; J5 - Horizontal Wrist Zero"</li>
+      <li>LR Mate 200iD/7H - "J1 - Normal Range; J5 - Horizontal Wrist Zero"</li>
       <li>LR Mate 200iD/7L - "J1 - Normal Range"</li>
+      <li>LR Mate 200iD/7LC - "J1 - Normal Range"</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information in
       the <em>FANUC Robot LR Mate 200iD Mechanical Unit Operator's Manual</em>
-      version <em>B-83494EN/03</em>. All urdfs are based on the default motion
+      version <em>B-83494EN/03</em> and the
+      <em>FANUC Robot LR Mate 200iD/4S/4SH/4SC Mechanical Unit Operator's Manual</em>
+      version <em>B-83574EN/03</em>. All urdfs are based on the default motion
       and joint velocity limits, unless noted otherwise (ie: no support for
       high speed joints, extended / limited motion ranges or other options).
     </p>
