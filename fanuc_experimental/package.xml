@@ -19,6 +19,7 @@
   <exec_depend>fanuc_lrmate200id_moveit_plugins</exec_depend>
   <exec_depend>fanuc_lrmate200id_support</exec_depend>
   <exec_depend>fanuc_r2000ib_support</exec_depend>
+  <exec_depend>fanuc_r2000ic_support</exec_depend>
 
   <export>
     <architecture_independent/>
