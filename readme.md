@@ -23,6 +23,16 @@ APIs are to be considered unstable and are not guaranteed to be complete
 and / or functional.
 
 
+## Status
+
+The packages in this repository are *community supported*.
+This means they do not get support from the OEM, nor from the ROS-Industrial consortia directly (see also the `support level` badge at the top of this page).
+
+Maintenance and development is on a best-effort basis and depends on volunteers.
+
+FANUC does not support ROS.
+
+
 ## Disclaimer
 
 The author of these packages is not affiliated with FANUC Corporation in any way.
