@@ -1,6 +1,5 @@
 # Fanuc experimental
 
-[![Build Status: ROS buildfarm](http://build.ros.org/job/Kdev__fanuc_experimental__ubuntu_xenial_amd64/badge/icon)](http://build.ros.org/job/Kdev__fanuc_experimental__ubuntu_xenial_amd64)
 [![Build Status: Ubuntu Xenial (Actions)](https://github.com/ros-industrial/fanuc_experimental/workflows/CI%20-%20Ubuntu%20Xenial/badge.svg?branch=indigo-devel)](https://github.com/ros-industrial/fanuc_experimental/actions?query=workflow%3A%22CI+-+Ubuntu+Xenial%22)
 [![Build Status: Ubuntu Bionic (Actions)](https://github.com/ros-industrial/fanuc_experimental/workflows/CI%20-%20Ubuntu%20Bionic/badge.svg?branch=indigo-devel)](https://github.com/ros-industrial/fanuc_experimental/actions?query=workflow%3A%22CI+-+Ubuntu+Bionic%22)
 [![Github Issues](https://img.shields.io/github/issues/ros-industrial/fanuc_experimental.svg)](http://github.com/ros-industrial/fanuc_experimental/issues)
