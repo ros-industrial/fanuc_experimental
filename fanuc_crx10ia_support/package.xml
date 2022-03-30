@@ -17,8 +17,8 @@
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information in
-      the <em>FANUC Robot CRX-10iA, CRX-10iA/L Mechanical Unit Operator's Manual</em> version
-      <em>B-84194EN/01</em>. All urdfs are based on the default motion and
+      the <em>FANUC Robot CRX-10iA, CRX-10iA/L Mechanical Unit Operator's Manual</em>
+      version <em>B-84194EN/01</em>. All urdfs are based on the default motion and
       joint velocity limits, unless noted otherwise (ie: no support for high
       speed joints, extended / limited motion ranges or other options).
     </p>
