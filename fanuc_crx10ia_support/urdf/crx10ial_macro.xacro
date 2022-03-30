@@ -1,7 +1,8 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
-  <xacro:include filename="$(find fanuc_resources)/urdf/common_materials.xacro"/>
   <xacro:macro name="fanuc_crx10ial" params="prefix">
+    <xacro:include filename="$(find fanuc_resources)/urdf/common_materials.xacro"/>
+
     <!-- links: main serial chain -->
     <link name="${prefix}base_link">
       <visual>
@@ -115,42 +116,42 @@
       <parent link="${prefix}base_link" />
       <child link="${prefix}link_1" />
       <axis xyz="0 0 1" />
-      <limit effort="0" lower="-3.14159" upper="3.14159" velocity="2.0944" />
+      <limit effort="0" lower="${radians(-180)}" upper="${radians(180)}" velocity="${radians(120)}" />
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <parent link="${prefix}link_1" />
       <child link="${prefix}link_2" />
       <axis xyz="0 1 0" />
-      <limit effort="0" lower="-3.14159" upper="3.14159" velocity="2.0944" />
+      <limit effort="0" lower="${radians(-180)}" upper="${radians(180)}" velocity="${radians(120)}" />
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
       <origin xyz="0 0 0.710" rpy="0 0 0" />
       <parent link="${prefix}link_2" />
       <child link="${prefix}link_3" />
       <axis xyz="0 -1 0" />
-      <limit effort="0" lower="-4.71239" upper="4.71239" velocity="3.14159" />
+      <limit effort="0" lower="${radians(-270)}" upper="${radians(270)}" velocity="${radians(180)}" />
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
       <axis xyz="-1 0 0"/>
-      <limit effort="0" lower="-3.31613" upper="3.31613" velocity="3.14159" />
+      <limit effort="0" lower="${radians(-190)}" upper="${radians(190)}" velocity="${radians(180)}" />
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
       <origin xyz="0.540 -0.150 0" rpy="0 0 0"/>
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
       <axis xyz="0 -1 0"/>
-      <limit effort="0" lower="-3.14159" upper="3.14159" velocity="3.14159" />
+      <limit effort="0" lower="${radians(-180)}" upper="${radians(180)}" velocity="${radians(180)}" />
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
       <origin xyz="0.160 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
       <axis xyz="-1 0 0"/>
-      <limit effort="0" lower="-3.31613" upper="3.31613" velocity="3.14159" />
+      <limit effort="0" lower="${radians(-190)}" upper="${radians(190)}" velocity="${radians(180)}" />
     </joint>
 
     <!-- ROS-Industrial 'base' frame: base_link to Fanuc World Coordinates transform -->

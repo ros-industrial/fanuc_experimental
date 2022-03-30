@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
   <name>fanuc_crx10ia_support</name>
-  <version>0.0.0</version>
+  <version>0.1.0</version>
   <description>
     <p>
       ROS-Industrial support for the Fanuc CRX-10iA (and variants).
@@ -13,13 +13,12 @@
     </p>
     <p><b>Specifications</b>:</p>
     <ul>
-      <li>CRX-10iA - 1249mm reach </li>
       <li>CRX-10iA/L - 1418mm reach</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information in
-      the <em>FANUC Robot CRX-10iA, CRX-10iA/L Mechanical Unit Operator's Manual</em> version
-      <em>B-84194EN/01</em>. All urdfs are based on the default motion and
+      the <em>FANUC Robot CRX-10iA, CRX-10iA/L Mechanical Unit Operator's Manual</em>
+      version <em>B-84194EN/01</em>. All urdfs are based on the default motion and
       joint velocity limits, unless noted otherwise (ie: no support for high
       speed joints, extended / limited motion ranges or other options).
     </p>
