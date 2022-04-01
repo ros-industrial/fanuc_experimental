@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
-  <xacro:include filename="$(find fanuc_resources)/urdf/common_materials.xacro"/>
-
   <xacro:macro name="fanuc_r2000ic210l" params="prefix">
+    <xacro:include filename="$(find fanuc_resources)/urdf/common_materials.xacro"/>
+
     <!-- links: main serial chain -->
     <link name="${prefix}base_link">
       <visual>
