@@ -21,16 +21,16 @@ jobs:
 
     env:
       CCACHE_DIR: "${{ github.workspace }}/.ccache"
-      UPSTREAM_WORKSPACE: "github:ros-industrial/fanuc#indigo-devel"
+      UPSTREAM_WORKSPACE: "github:ros-industrial/fanuc#melodic-devel"
       CATKIN_LINT: "true"
       CATKIN_LINT_ARGS: --ignore launch_depend
 
     steps:
       - name: Fetch repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: ccache cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ${{ env.CCACHE_DIR }}
           # we always want the ccache cache to be persisted, as we cannot easily
